@@ -1,0 +1,103 @@
+/*	*	*	*	*
+
+ *	Black Lib 1969 custom css
+        extending the Berlin theme
+ *	for Omeka
+
+ *	*	*	*	*/
+
+body{
+	font-family: $font-secondary-family;
+}
+
+#{headings(1,6)}{ 
+	font-family: $font-secondary-family,"Helvetica Neue", sans-serif;
+}
+
+#{headings(1)}{
+	font-family: $font-header, serif;
+}
+
+#site-title a{
+
+	font-family: $font-primary-family;
+        display: inline-block;
+        width: 135px;
+        height: 135px;
+        padding-left: 150px;
+        background: url(fawo_lg.gif) no-repeat bottom;
+        background-size: 135px 135px;
+}       
+
+.hTagcloud ul li{
+	display: inline-block;
+	margin: 17px 4px;
+	 a{
+		color: #fff;
+		padding: 10px 5px;
+		text-decoration: none;
+		background-color: lighten($color-contrast, 5%);
+		border: 2px solid darken($color-contrast, 5%);
+		border-radius: 20px;
+		} 
+	a:hover {
+		background-color: lighten($color-contrast, 10%);
+		border: 2px solid lighten($color-primary, 20%)
+	}
+}
+
+div.exhibit p.tags { display: none; }
+
+.jcarousel ul li { padding: 0 50px; }
+
+#primary-nav li.active a, li.active a{ color: darken($color-contrast,10%); }
+
+.element-text, .exhibit-description p, p.simplepage-text, #exhibits-list li p
+{
+	font-size: 1.3em;
+	line-height: 1.3em;
+}
+
+ul#exhibits-list {
+	
+	list-style: none;
+	li { clear: left; padding-right: 10px; }
+	.item.record h3 { display: none; }
+	.item.record { float: left;}
+}
+
+/* Exhibit Pages */
+/* * * * * * * * * * * * * * * * * * * * * */
+
+.exhibits.show {
+    
+    ul.exhibit-page-nav#secondary-nav{
+  
+        list-style-type: decimal;
+        li { padding-bottom: 0; }  
+        li a{ 
+            background: none; 
+            color: $color-dark;
+            font-size: 1.3em; 
+        }
+        li.current a{ color: $color-contrast; }
+        a.exhibit-title{ 
+            color:#000;
+            font-family: $font-header;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        li:nth-child(3){ display: none; }
+
+    }
+
+    #content h1 { font-family: $font-secondary-family; }
+
+    ul.exhibit-child-nav { display: none; }
+
+    #exhibit-page-navigation { 
+
+        font-size: 1.5em; 
+        .current-page, #exhibit-nav-up { display: none; }
+    }
+}   

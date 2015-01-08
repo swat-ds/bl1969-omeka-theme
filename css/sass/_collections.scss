@@ -1,0 +1,184 @@
+/*
+*
+* Collections Page CSS
+* Xavier Lee (xlee1)
+* 12.19.14
+* 
+*/
+
+#collections-page {
+	
+  div{
+	float: left;
+	width: 31%;
+	padding: .5%;
+	height: 200px;
+	overflow: hidden;
+	margin: .5%;
+	cursor: pointer;
+}
+  h4{
+        color: white;
+	font-weight: bold;
+	font-size: 16pt;
+	padding-top: 35px;
+	text-align: center;
+}
+
+  h5{
+	color: white;
+	text-align: center;
+	padding-top: 34px;
+	margin-bottom: -68px;
+	font-variant: small-caps;
+	font-size: 11pt;
+}
+
+  p{
+	display: none;
+	text-align: center;
+	padding-top: 35px;
+	text-shadow: -1px 0 #444, 0 1px #444, 1px 0 444, 0 -1px #444;
+	color: white;
+}
+
+ :hover p{
+	display: block;
+}
+
+ :hover h4,  :hover h5{
+	display: none;
+}
+
+  #blackswarthmore,   #halcyon,   #narratives,   #blackphilosophies,   #mediafellows,   #chesterhomes,   #fhlrefs,   #students{
+	background:   linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),;
+	background-size: 100%;
+}
+
+#blackswarthmore{
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	), 
+	url(http://blacklib1969.swarthmore.edu/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg) no-repeat center center;
+	background-size: 100%;
+}
+
+#halcyon{
+	background-size: 400px 400px;
+	background:  linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),url(http://blacklib1969.swarthmore.edu/files/original/9f3332c096da7f90806c24eae99c5b0c.jpg) no-repeat center center;
+}
+
+#narratives{
+	background:  linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),url(http://blacklib1969.swarthmore.edu/files/fullsize/03c7e5cef9f2230083e17b403110f335.jpg) no-repeat 0px 38%;
+	background-size: 100% auto;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#blackphilosophies{
+	background:  linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),url(http://blacklib1969.swarthmore.edu/files/fullsize/8dd5fc5d5a576b1f4e0ad09cd9e9e373.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#mediafellows{
+	background:  linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),url(http://blacklib1969.swarthmore.edu/files/fullsize/c0a24bba8509defe8c0f4b17c12d4a2e.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#chesterhomes{
+	background:  linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),url(http://blacklib1969.swarthmore.edu/files/fullsize/ea7fdeedbb4e73477895abba21d6ba57.jpg) no-repeat bottom right;
+	background-size: 100% auto;
+}
+
+#fhlrefs{
+	background:  linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),url(http://blacklib1969.swarthmore.edu/files/fullsize/cec03e328f658884a1e20b68492f9090.jpg) no-repeat center right;
+	background-size: 100% auto;
+}
+
+#bccrecords{
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	), url(http://blacklib1969.swarthmore.edu/files/fullsize/c3149a8103ab6c6f51010a1561f2cf8d.jpg) no-repeat center right;
+	background-size: 100% auto;
+}
+
+#students{
+	background:  linear-gradient(
+	rgba(0, 0, 0, 0.6), 
+	rgba(0, 0, 0, 0.6)
+	),url(http://blacklib1969.swarthmore.edu/files/fullsize/9f8399fd81eaa2726d0e7614e838559d.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#interviews{
+	background:   linear-gradient(
+	rgba(0, 0, 0, 0.7), 
+	rgba(0, 0, 0, 0.7)
+	), url(http://blacklib1969.swarthmore.edu/files/fullsize/e0155c1b57f92c6468f30ec1d8bba2eb.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#swarthmorean{
+	background:   linear-gradient(
+	rgba(0, 0, 0, 0.7), 
+	rgba(0, 0, 0, 0.7)
+	), url(http://blacklib1969.swarthmore.edu/files/fullsize/7897a6cea33f74a323828b04adf52559.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#delcotimes{
+	background:   linear-gradient(
+	rgba(0, 0, 0, 0.7), 
+	rgba(0, 0, 0, 0.7)
+	), url(http://blacklib1969.swarthmore.edu/files/fullsize/a29663d7cd6a72bd50c85118bd8b0f0d.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#robcross{
+	background:   linear-gradient(
+	rgba(0, 0, 0, 0.7), 
+	rgba(0, 0, 0, 0.7)
+	), url(http://blacklib1969.swarthmore.edu/files/fullsize/9363b806296723780296e0d746c3fe12.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#courtneysmith{
+	background:   linear-gradient(
+	rgba(0, 0, 0, 0.7), 
+	rgba(0, 0, 0, 0.7)
+	), url(http://blacklib1969.swarthmore.edu/files/fullsize/491af50d4c031fde6cb9c0528f3594fb.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+
+#phoenix{
+	background:   linear-gradient(
+	rgba(0, 0, 0, 0.7), 
+	rgba(0, 0, 0, 0.7)
+	), url(http://blacklib1969.swarthmore.edu/files/fullsize/1653746fb11685df22b980e5d563f3eb.jpg) no-repeat center center;
+	background-size: 100% auto;
+}
+}
