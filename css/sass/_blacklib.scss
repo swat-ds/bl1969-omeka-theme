@@ -101,3 +101,10 @@ ul#exhibits-list {
         .current-page, #exhibit-nav-up { display: none; }
     }
 }   
+
+/* Show Image */
+/* * * * * * * * * * * * * * * * * * * * * */
+
+#docs-viewer_viewer h2 { display: none; }
+#image-preview { max-width: 500px; }
+#dublin-core-title { display: none; }
