@@ -1,26 +1,24 @@
 <?php
-$current_collection = get_collection_for_item($items[0]);
-$pageTitle = __(metadata($current_collection, array('Dublin Core','Title')));
+$pageTitle = __('Browse Items');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 
-<h1><?php echo $pageTitle;?></h1> 
-<?php 
-    $elements_array = ['Description', 'Source'];
-    foreach ($elements_array as $element) {
-        $out = "<h2>" . $element . "</h2>";
-        $out .= "<h3>" . metadata($current_collection, array('Dublin Core', $element)) . "</h3>";
-        echo $out;
-    }
-?>
-<h2><?php echo __('(%s total items)', $total_results); ?></h2>
+<h1><?php echo $pageTitle;?> <?php echo __('(%s total)', $total_results); ?></h1>
+
+<nav class="items-nav navigation secondary-nav">
+    <?php echo public_nav_items(); ?>
+</nav>
+
+<?php echo item_search_filters(); ?>
+
 <?php echo pagination_links(); ?>
 
 <?php if ($total_results > 0): ?>
 
 <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
-$sortLinks[__('Date')] = 'Dublin Core,Date';
+$sortLinks[__('Creator')] = 'Dublin Core,Creator';
+$sortLinks[__('Date Added')] = 'added';
 ?>
 <div id="sort-links">
     <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
@@ -30,7 +28,7 @@ $sortLinks[__('Date')] = 'Dublin Core,Date';
 
 <?php foreach (loop('items') as $item): ?>
 <div class="item hentry">
-    <h3><strong><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>75)), array('class'=>'permalink')); ?></strong></h3>
+    <h2><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h2>
     <div class="item-meta">
     <?php if (metadata('item', 'has thumbnail')): ?>
     <div class="item-img">
