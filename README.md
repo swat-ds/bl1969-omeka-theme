@@ -14,3 +14,5 @@ Berlin+ is an extension of the Berlin Omeka theme customized for Black Liberatio
 + added package.json/gruntfile.js in order to replace compass with grunt
 + added google analytics script to common/footer.php
 + added livereload script to common/footer.php
++ added custom items/show.php and custom items/browse.php
++ added custom item-relations-show.php to ItemRelations plugin
