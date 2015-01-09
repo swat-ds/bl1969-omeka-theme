@@ -6,7 +6,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
 <h1><?php echo $pageTitle;?></h1> 
 <?php 
-    $elements_array = ['Description', 'Source'];
+    $elements_array = ('Description', 'Source');
     foreach ($elements_array as $element) {
         $out = "<h2>" . $element . "</h2>";
         $out .= "<h3>" . metadata($current_collection, array('Dublin Core', $element)) . "</h3>";
