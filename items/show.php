@@ -2,7 +2,6 @@
 <div id="primary">
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
 
-    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
     <?php if( metadata($item, 'item_type_name') == 'Text'
         && stripos(metadata($item, array('Dublin Core', 'Format')), 'jpg') !== false) {
 
@@ -15,16 +14,19 @@
             echo metadata($item, array('Item Type Metadata', 'Player'));
         }
     ?>
+    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 
   <!-- Items metadata -->
   <div id="item-metadata">
     <?php echo all_element_texts('item'); ?>
 </div>
 
+<?php  if(metadata($item, 'item_type_name') !== 'Moving Image'): ?>
 <h3><?php echo __('Files'); ?></h3>
 <div id="item-images">
    <?php echo files_for_item(); ?>
 </div>
+<?php endif; ?>
 
 <?php if(metadata('item','Collection Name')): ?>
   <div id="collection" class="element">

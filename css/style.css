@@ -2409,6 +2409,23 @@ ul#exhibits-list .item.record {
   display: none;
 }
 
+/* Show Image */
+/* * * * * * * * * * * * * * * * * * * * * */
+/* line 108, sass/_blacklib.scss */
+#docs-viewer_viewer h2 {
+  display: none;
+}
+
+/* line 109, sass/_blacklib.scss */
+#image-preview {
+  max-width: 500px;
+}
+
+/* line 110, sass/_blacklib.scss */
+#dublin-core-title {
+  display: none;
+}
+
 /*
 *
 * Collections Page CSS
