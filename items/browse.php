@@ -8,9 +8,12 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 <?php 
     $elements_array = array('Description', 'Source');
     foreach ($elements_array as $element) {
-        $out = "<h2>" . $element . "</h2>";
-        $out .= "<h3>" . metadata($current_collection, array('Dublin Core', $element)) . "</h3>";
-        echo $out;
+        $element_text = metadata($current_collection, array('Dublin Core', $element));
+        if($element_text){
+            $out = "<h2>" . $element . "</h2>";
+            $out .= "<h3>" .  . "</h3>";
+            echo $out;
+        }   
     }
 ?>
 <h2><?php echo __('(%s total items)', $total_results); ?></h2>
