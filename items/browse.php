@@ -11,7 +11,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
         $element_text = metadata($current_collection, array('Dublin Core', $element));
         if($element_text){
             $out = "<h2>" . $element . "</h2>";
-            $out .= "<h3>" .  . "</h3>";
+            $out .= "<h3>" . $element_text . "</h3>";
             echo $out;
         }   
     }
