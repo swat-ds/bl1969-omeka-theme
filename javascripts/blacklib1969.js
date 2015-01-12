@@ -8,7 +8,7 @@ jQuery(function(){
         jQuery.ajax({
             url: 'api/items/' + id
         }).done(function(d){
-            console.log(d.element_texts[6]);
+            console.log(d.element_texts[6].element_set.text);
         });
     }
 
