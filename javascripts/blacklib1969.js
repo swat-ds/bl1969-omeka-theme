@@ -8,9 +8,22 @@ jQuery(function(){
         jQuery.ajax({
             url: 'api/items/' + id
         }).done(function(d){
-            console.log(d.element_texts[6].element_set.text);
+            for(i in d.element_texts){
+                currElement = d.element_texts[i];                
+                if(currElement.element.name == 'Player'){
+                    playerHTML = currElement.text;
+                }
+                if(currElement.element.name == 'Description'){
+                    description = currElement.text;
+                }
+            }
+            jQuery('div#soundtrack-exhibit-player')
+                .html(playerHTML)
+                .append("<p>" + description);    
         });
     }
+
+    getPlayerFromID(1263);    
 
     jQuery('#soundtrack-exhibit-container .item')
         .on('click', function(d){
