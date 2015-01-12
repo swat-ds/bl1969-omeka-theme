@@ -3,8 +3,22 @@
 
 jQuery(function(){
 
+    function getPlayerFromID(id){
+
+        jQuery.ajax({
+            url: 'api/items/' + id
+        }).done(function(d){
+            console.log(d);
+        });
+    }
+
     jQuery('#soundtrack-exhibit-container .item')
         .on('click', function(d){
-            console.log(d);
+            itemID = jQuery(d.currentTarget)
+                .children('a').attr('href');
+            itemID = itemID.substr(itemID.lastIndexOf('/') + 1);
+
+            getPlayerFromID(itemID);
+
         });
 });
