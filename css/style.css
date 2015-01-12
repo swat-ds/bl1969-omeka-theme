@@ -2426,6 +2426,12 @@ ul#exhibits-list .item.record {
   display: none;
 }
 
+/* line 113, sass/_blacklib.scss */
+#item-metadata .element-set div div, #item-metadata .element-set div h3 {
+  display: inline-block;
+  float: left;
+}
+
 /*
 *
 * Collections Page CSS

@@ -108,3 +108,10 @@ ul#exhibits-list {
 #docs-viewer_viewer h2 { display: none; }
 #image-preview { max-width: 500px; }
 #dublin-core-title { display: none; }
+#item-metadata .element-set { 
+
+    div div, div h3 { 
+        display: inline-block;
+        float: left; 
+    }
+}
