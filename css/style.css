@@ -2432,6 +2432,29 @@ ul#exhibits-list .item.record {
   float: left;
 }
 
+/* Soundtrack Exhibit */
+/* * * * * * * * * * * * * * * * * * * * * */
+/* line 122, sass/_blacklib.scss */
+div#soundtrack-exhibit-player {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* line 129, sass/_blacklib.scss */
+div#soundtrack-exhibit-container .record {
+  display: inline-block;
+}
+/* line 131, sass/_blacklib.scss */
+div#soundtrack-exhibit-container .item img {
+  max-width: 150px;
+  max-height: 150px;
+}
+/* line 132, sass/_blacklib.scss */
+div#soundtrack-exhibit-container .item .item-description, div#soundtrack-exhibit-container .item h3 {
+  display: none;
+}
+
 /*
 *
 * Collections Page CSS
