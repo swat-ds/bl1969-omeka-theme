@@ -26,10 +26,10 @@
                Omeka.dropDown();
     });
 </script>
-<?php if(stripos($_SERVER[REQUEST_URI], 'soundtrack') !== false){
-    echo js_tag('soundtrack-gallery.js');
-}elseif(stripos($_SERVER[REQUEST_URI],'interviews') !== false){
-    echo js_tag('interviews-gallery.js');
+<?php if(stripos($_SERVER['REQUEST_URI'], 'soundtrack') !== false){
+    echo js_tag('soundtrack-gallery');
+}elseif(stripos($_SERVER['REQUEST_URI'],'interviews') !== false){
+    echo js_tag('interviews-gallery');
 }?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
