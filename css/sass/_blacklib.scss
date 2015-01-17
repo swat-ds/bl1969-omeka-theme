@@ -105,17 +105,18 @@ ul#exhibits-list {
 /* Show Image */
 /* * * * * * * * * * * * * * * * * * * * * */
 
-#docs-viewer_viewer h2 { display: none; }
 #image-preview { max-width: 500px; }
 #dublin-core-title { display: none; }
-#item-metadata .element-set { 
+div.element-text { padding: 1em 0 0 1em; }
+#item-metadata .element-set, div.element { 
 
-    div div, div h3 { 
+    div div, div h3, h3,  div { 
         display: inline-block;
         float: left; 
     }
 }
-
+div#docsviewer h2, div#docsviewer_viewer h2 { display: none; }
+div#moving-image-item-type-metadata-player { display: none; }
 /* Soundtrack Exhibit */
 /* * * * * * * * * * * * * * * * * * * * * */
 

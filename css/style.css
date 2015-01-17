@@ -2412,51 +2412,61 @@ ul#exhibits-list .item.record {
 /* Show Image */
 /* * * * * * * * * * * * * * * * * * * * * */
 /* line 108, sass/_blacklib.scss */
-#docs-viewer_viewer h2 {
-  display: none;
-}
-
-/* line 109, sass/_blacklib.scss */
 #image-preview {
   max-width: 500px;
 }
 
-/* line 110, sass/_blacklib.scss */
+/* line 109, sass/_blacklib.scss */
 #dublin-core-title {
   display: none;
 }
 
+/* line 110, sass/_blacklib.scss */
+div.element-text {
+  padding: 1em 0 0 1em;
+}
+
 /* line 113, sass/_blacklib.scss */
-#item-metadata .element-set div div, #item-metadata .element-set div h3 {
+#item-metadata .element-set div div, #item-metadata .element-set div h3, #item-metadata .element-set h3, #item-metadata .element-set div, div.element div div, div.element div h3, div.element h3, div.element div {
   display: inline-block;
   float: left;
 }
 
+/* line 118, sass/_blacklib.scss */
+div#docsviewer h2, div#docsviewer_viewer h2 {
+  display: none;
+}
+
+/* line 119, sass/_blacklib.scss */
+div#moving-image-item-type-metadata-player {
+  display: none;
+}
+
 /* Soundtrack Exhibit */
 /* * * * * * * * * * * * * * * * * * * * * */
-/* line 122, sass/_blacklib.scss */
+/* line 123, sass/_blacklib.scss */
 div#soundtrack-exhibit-player {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
 
-/* line 128, sass/_blacklib.scss */
+/* line 129, sass/_blacklib.scss */
 div#soundtrack-exhibit-container {
   width: 92%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 132, sass/_blacklib.scss */
+/* line 133, sass/_blacklib.scss */
 div#soundtrack-exhibit-container .record {
   display: inline-block;
 }
-/* line 134, sass/_blacklib.scss */
+/* line 135, sass/_blacklib.scss */
 div#soundtrack-exhibit-container .item img {
   max-width: 150px;
   max-height: 150px;
 }
-/* line 135, sass/_blacklib.scss */
+/* line 136, sass/_blacklib.scss */
 div#soundtrack-exhibit-container .item .item-description, div#soundtrack-exhibit-container .item h3 {
   display: none;
 }
