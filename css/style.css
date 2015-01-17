@@ -2472,38 +2472,40 @@ div#soundtrack-exhibit-container .item .item-description, div#soundtrack-exhibit
 /* * * * * * * * * * * * * * * * * * * * * */
 /* line 146, sass/_blacklib.scss */
 div#interviews-gallery {
-  width: 92%;
+  width: 98%;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #f00;
 }
-/* line 151, sass/_blacklib.scss */
+/* line 152, sass/_blacklib.scss */
 div#interviews-gallery .record {
   display: inline-block;
   height: 150px;
   width: 150px;
+  overflow: hidden;
 }
-/* line 157, sass/_blacklib.scss */
+/* line 159, sass/_blacklib.scss */
 div#interviews-gallery .item img {
   width: 150px;
   height: 150px;
 }
-/* line 158, sass/_blacklib.scss */
+/* line 160, sass/_blacklib.scss */
 div#interviews-gallery .item img:nth-child(2) {
   position: relative;
   top: -150px;
   z-index: 1;
 }
-/* line 163, sass/_blacklib.scss */
+/* line 165, sass/_blacklib.scss */
 div#interviews-gallery .item .item-description, div#interviews-gallery .item h3:first-child {
   display: none;
 }
-/* line 164, sass/_blacklib.scss */
+/* line 166, sass/_blacklib.scss */
 div#interviews-gallery .item a h3 {
   position: relative;
-  margin: 15px;
-  top: -150px;
+  margin: 0 15px;
+  top: -3.6em;
   color: #fff;
-  z-index: 99;
+  z-index: 5;
 }
 
 /*

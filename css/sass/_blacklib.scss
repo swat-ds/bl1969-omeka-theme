@@ -145,13 +145,15 @@ div#soundtrack-exhibit-container {
 
 div#interviews-gallery{
 
-    width: 92%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid #f00;
     .record { 
         display: inline-block;
         height: 150px;
         width: 150px;
+        overflow: hidden;
     }
     .item {
         img { width: 150px; height: 150px; }
@@ -163,10 +165,10 @@ div#interviews-gallery{
         .item-description,h3:first-child {display: none;}
         a h3 {
             position: relative;
-            margin: 15px;
-            bottom: 100px;
+            margin: 0 15px;
+            top: -3.6em;
             color: #fff;
-            z-index: 99;
+            z-index: 5;
         }
     }
 }
