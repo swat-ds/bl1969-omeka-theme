@@ -53,67 +53,6 @@ var area = d3.svg.area()
     return y(d.percent);
   });
 
-function mousemove(data) {
-  var x0 = x.invert(d3.mouse(this)[0]),
-  i = bisectDate(data, x0, 1),
-  d0 = data[i - 1],
-  d1 = data[i],
-  d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-
-  focus.select("circle.y")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    y(d.percent) + ")");
-
-  focusl.select("circle.y")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")");
-  focus.select(".x")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")")
-  .attr("y2", height - yl(d.number));
-
-  focus.select("text.y1")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")")
-  .text(d.number);
-
-  focus.select("text.y2")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")")
-  .text(d.number);
-
-  focus.select("text.y3")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")")
-  .text(formatDate(d.date));
-
-  focus.select("text.y4")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")")
-  .text(formatDate(d.date));
-
-  focus.select("text.y5")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")")
-  .text(d.percent + '%');
-
-  focus.select("text.y6")
-  .attr("transform",
-    "translate(" + x(d.date) + "," +
-    yl(d.number) + ")")
-  .text(d.percent + '%');
-
-} // end mousemove function
-
-
 jQuery(function(){
   var svg = d3.select("div#enrollment-visualization").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -351,6 +290,68 @@ jQuery(function(){
       focus.style("display", "none");
       focusl.style("display", "none");
     })
-    .on("mousemove", mousemove(data));
+    .on("mousemove", mousemove);
+
+  function mousemove() {
+    var x0 = x.invert(d3.mouse(this)[0]),
+    i = bisectDate(data, x0, 1),
+    d0 = data[i - 1],
+    d1 = data[i],
+    d = x0 - d0.date > d1.date - x0 ? d1 : d0;
+
+    focus.select("circle.y")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      y(d.percent) + ")");
+
+    focusl.select("circle.y")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")");
+    focus.select(".x")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")")
+    .attr("y2", height - yl(d.number));
+
+    focus.select("text.y1")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")")
+    .text(d.number);
+
+    focus.select("text.y2")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")")
+    .text(d.number);
+
+    focus.select("text.y3")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")")
+    .text(formatDate(d.date));
+
+    focus.select("text.y4")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")")
+    .text(formatDate(d.date));
+
+    focus.select("text.y5")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")")
+    .text(d.percent + '%');
+
+    focus.select("text.y6")
+    .attr("transform",
+      "translate(" + x(d.date) + "," +
+      yl(d.number) + ")")
+    .text(d.percent + '%');
+
+} // end mousemove function
+
+
     });
 });
