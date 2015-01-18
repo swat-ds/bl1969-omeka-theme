@@ -1,3 +1,5 @@
+var filepath = "themes/berlin_bl1969mod/javascripts/";
+
 var margin = {
   top: 20,
   right: 50,
@@ -51,7 +53,7 @@ var area = d3.svg.area()
     return y(d.percent);
   });
 
-function mousemove() {
+function mousemove(data) {
   var x0 = x.invert(d3.mouse(this)[0]),
   i = bisectDate(data, x0, 1),
   d0 = data[i - 1],
@@ -124,8 +126,8 @@ jQuery(function(){
   var demand100Svg = svg.append("g");
   var demand150Svg = svg.append("g");
   var classespresentSvg = svg.append("g");
-
-  d3.csv("data2.csv", function(error, data) {
+  
+  d3.csv(filepath + "data.csv", function(error, data) {
     data.forEach(function(d) {
     d.date = parseDate(d.date);
     d.number = +d.number;
@@ -349,5 +351,6 @@ jQuery(function(){
       focus.style("display", "none");
       focusl.style("display", "none");
     })
-    .on("mousemove", mousemove);
+    .on("mousemove", mousemove(data));
+    });
 });
