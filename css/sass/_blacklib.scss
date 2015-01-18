@@ -148,7 +148,6 @@ div#interviews-gallery{
     width: 98%;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #f00;
     .record { 
         display: inline-block;
         height: 150px;
@@ -156,8 +155,9 @@ div#interviews-gallery{
         overflow: hidden;
     }
     .item {
-        img { width: 150px; height: 150px; }
+        img { width: 150px; height: 150px; z-index: 1; }
         img:nth-child(2){
+            display:none;
             position: relative;
             top: -150px;
             z-index: 1;
@@ -168,7 +168,7 @@ div#interviews-gallery{
             margin: 0 15px;
             top: -3.6em;
             color: #fff;
-            z-index: 5;
+            z-index: 2;
         }
     }
 }

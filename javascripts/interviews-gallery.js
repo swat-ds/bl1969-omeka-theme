@@ -1,17 +1,20 @@
 // interview gallery interaction scripts
 
 jQuery(function(){
-    
+   
+    i = 0; 
     jQuery('#interviews-gallery .item')
         .each(function(){
             $title = jQuery(this).find("h3 > a").text(); 
-            $src = 'http://blacklib1969.swarthmore.edu/files/square_thumbnails/1db37712ad7c32467bfefa24de41c804.jpg';
+            $baseURL = 'http://blacklib1969.swarthmore.edu/files/square_thumbnails/';
             jQuery(this).children('a')
-                .append(["<img src='" + $src + "'/>",
+                .append(["<img src='" + $baseURL + thumbsJSON[i].file + "'/>",
                         "<h3>" + $title + "</h3>"]);
+            i++;
         })
         .hover(function(e){
+            console.log(e.currentTarget);
            jQuery(e.currentTarget).find('img:nth-child(2)')
-            .first().toggle();
+            .toggle();
         });
 });

@@ -29,6 +29,7 @@
 <?php if(stripos($_SERVER['REQUEST_URI'], 'soundtrack') !== false){
     echo js_tag('soundtrack-gallery');
 }elseif(stripos($_SERVER['REQUEST_URI'],'interviews') !== false){
+    echo js_tag('interviews-imgs');
     echo js_tag('interviews-gallery');
 }?>
 <script>
