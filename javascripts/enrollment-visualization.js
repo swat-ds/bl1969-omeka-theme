@@ -184,7 +184,7 @@ jQuery(function(){
     .attr("x1", 0)
     .attr("y1", height * 0.457)
     .attr("x2", width)
-    .attr("y2", height * 0.457)
+    .attr("y2", height * 0.457);
 
   svg.append("text")
     .style("fill", "red")
@@ -227,7 +227,7 @@ jQuery(function(){
     .style("font-size", "11")
     .attr("transform", "translate(" + (0.05 * width) + "," + (height * 0.185) + ")")
     .attr("dy", "2.1em")
-    .text("average 37.5 per class");  
+    .text("average 37.5 per class");
 
   svg.append("text")
     .style("fill", "red")
@@ -259,7 +259,7 @@ jQuery(function(){
     .attr("x1", width *0.328)
     .attr("y1", height * 0.99)
     .attr("x2", width*0.373)
-    .attr("y2", height * 0.99)
+    .attr("y2", height * 0.99);
 
   svg.append("text")
     .style("fill", "red")
@@ -322,7 +322,6 @@ jQuery(function(){
     .attr("dx", 8)
     .attr("dy", "-.3em");
 
-
   // place the percent at the intersection
   focus.append("text")
     .attr("class", "y5")
@@ -351,4 +350,4 @@ jQuery(function(){
       focusl.style("display", "none");
     })
     .on("mousemove", mousemove);
-}); // end jquery ready
+});
