@@ -172,3 +172,30 @@ div#interviews-gallery{
         }
     }
 }
+
+/* Enrollment Visualization */
+/* * * * * * * * * * * * * * * * * * * * * */
+
+div#enrollment-visualization {
+
+    font-family: 12px sans-serif;
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+    .x.axis path {
+      display: none;
+    }
+    .line {
+      fill: none;
+      stroke-width: 2.5px;
+      stroke: #315a7d;
+    }
+    .area {
+      stroke: none;
+      fill: #b2cce1;
+    }
+}
