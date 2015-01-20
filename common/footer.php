@@ -28,7 +28,8 @@
 </script>
 <?php 
 
-    $path = explode('/',$_SERVER['REQUEST_URI'])[-1];
+    $path = explode('/',$_SERVER['REQUEST_URI']);
+    $path = end($path);
     switch($path){
 
     case "soundtrack":
@@ -43,7 +44,7 @@
             src='http://d3js.org/d3.v3.min.js'></script>";
         echo js_tag('enrollment-visualization');
         break;
-    case "about":
+    default:
         echo js_tag('about');
         break;
     }
