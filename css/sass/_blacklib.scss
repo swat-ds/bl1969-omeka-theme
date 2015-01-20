@@ -56,6 +56,8 @@ div.exhibit p.tags { display: none; }
 	line-height: 1.3em;
 }
 
+p.simplepage-text { padding: 0 1em; }
+
 /* Exhibit Pages */
 /* * * * * * * * * * * * * * * * * * * * * */
 
@@ -215,9 +217,12 @@ div#exhibits-container {
 /* About Page */
 /* * * * * * * * * * * * * * * * * * * * * */
 
-#jcarousel-about ul li{
-    width: 50%;
-    height: 25%;
-    border: 1px solid #ddd;
-    img { height: 100%; }
+#jcarousel-about ul li {
+    width: 500px;
+    height: 500px;
+    h3, p{
+        width: 50%;
+        height: 25%;
+        border: 1px solid #ddd;
+    }
 }
