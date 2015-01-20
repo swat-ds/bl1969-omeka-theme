@@ -16,12 +16,15 @@ jQuery(function(){
         exhibit += "<p>" + exhibitsJSON[i].description + "</p></li>"
         
         console.log(exhibit);
-        // carousel.append(exhibit);
+        carousel.append(exhibit);
     }
 
-    jQuery('#jcarousel-about').jcarousel({
+    carousel = jQuery('#jcarousel-about');
+    carousel.jcarousel({
         animation: 'slow'
         
     });
+
+    carousel.reload();
 });
 
