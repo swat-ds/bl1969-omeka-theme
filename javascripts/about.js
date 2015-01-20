@@ -6,7 +6,7 @@ jQuery(function(){
         center: true,
     });
 
-    jQuery('.jcarousel')
+    jQuery('.jcarousel ul')
         .append("<li>" + "one")
         .append("<li>" + "two")
         .append("<li>" + "three");
