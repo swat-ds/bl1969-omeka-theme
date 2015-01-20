@@ -8,8 +8,8 @@ jQuery(function(){
     for(i in exhibitsJSON){
 
         exhibit = "<li><a href='" + exhibitsJSON[i].url + "'>";
-        exhibit += "<div style='background: url('http://54.210.13.122/files/fullsize/";
-        exhibit += exhibitsJSON[i].thumb + "')'>";
+        exhibit += "<div style='background: url(http://54.210.13.122/files/fullsize/";
+        exhibit += exhibitsJSON[i].thumb + ")'>";
         exhibit += "<h3>" + exhibitsJSON[i].title + "</h3>";
         exhibit += "<p>" + exhibitsJSON[i].description + "</p></div></li>"
         
