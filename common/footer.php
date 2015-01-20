@@ -36,7 +36,7 @@
         echo js_tag('soundtrack-gallery');
         break;
     case "interviews":
-        echo js_tag('interviews-imgs');
+        echo js_tag('interviews-json');
         echo js_tag('interviews-gallery');
         break;
     case "enrollment":
@@ -45,6 +45,7 @@
         echo js_tag('enrollment-visualization');
         break;
     default:
+        echo js_tag('exhibits-json');
         echo js_tag('about');
         break;
     }
