@@ -2,11 +2,11 @@
 
 jQuery(function(){
 
-    jQuery('.jcarousel').jcarousel({
+    jQuery('#jcarousel-about').jcarousel({
         center: true,
     });
 
-    jQuery('.jcarousel ul')
+    jQuery('#jcarousel-about ul')
         .append("<li>" + "one")
         .append("<li>" + "two")
         .append("<li>" + "three");
