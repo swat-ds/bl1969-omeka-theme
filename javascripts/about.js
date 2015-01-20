@@ -18,7 +18,6 @@ jQuery(function(){
     }
 
     jQuery('#jcarousel-about').jcarousel({
-        animation: 'slow',
-        vertical: true
+        animation: 'slow'
     });
 });
