@@ -48,22 +48,12 @@ body{
 
 div.exhibit p.tags { display: none; }
 
-.jcarousel ul li { padding: 0 50px; }
-
 #primary-nav li.active a, li.active a{ color: darken($color-contrast,10%); }
 
 .element-text, .exhibit-description p, p.simplepage-text, #exhibits-list li p
 {
 	font-size: 1.3em;
 	line-height: 1.3em;
-}
-
-ul#exhibits-list {
-	
-	list-style: none;
-	li { clear: left; padding-right: 10px; }
-	.item.record h3 { display: none; }
-	.item.record { float: left;}
 }
 
 /* Exhibit Pages */
@@ -198,4 +188,36 @@ div#enrollment-visualization svg {
       stroke: none;
       fill: #b2cce1;
     }
+}
+
+/* Exhibits List Page */
+/* * * * * * * * * * * * * * * * * * * * * */
+
+div#exhibits-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    div.exhibit-preview { 
+        width: 45%;
+        min-width: 310px; 
+        height: 375px;
+        float: left; border-bottom: 1px solid #ddd;
+        padding: 1em 1em 0 1em;
+        margin: 0 1em;
+        
+        a img.thumb{ width: 200px; height: 200px; }
+        div { vertical-align: top; }
+    }
+    div.exhibit-preview:hover { background: #ddd; }	
+}
+
+
+/* About Page */
+/* * * * * * * * * * * * * * * * * * * * * */
+
+#jcarousel-about ul li{
+    width: 50%;
+    height: 25%;
+    border: 1px solid #ddd;
+    img { height: 100%; }
 }
