@@ -26,15 +26,28 @@
                Omeka.dropDown();
     });
 </script>
-<?php if(stripos($_SERVER['REQUEST_URI'], 'soundtrack') !== false){
-    echo js_tag('soundtrack-gallery');
-}elseif(stripos($_SERVER['REQUEST_URI'],'interviews') !== false){
-    echo js_tag('interviews-imgs');
-    echo js_tag('interviews-gallery');
-}elseif(stripos($_SERVER['REQUEST_URI'],'enrollment') !== false){
-    echo "<script type='text/javascript' src='http://d3js.org/d3.v3.min.js'></script>";
-    echo js_tag('enrollment-visualization');
-}?>
+<?php 
+
+    $path = explode('/',$_SERVER['REQUEST_URI'])[-1];
+    switch($path){
+
+    case "soundtrack":
+        echo js_tag('soundtrack-gallery');
+        break;
+    case "interviews":
+        echo js_tag('interviews-imgs');
+        echo js_tag('interviews-gallery');
+        break;
+    case "enrollment":
+        echo "<script type='text/javascript' 
+            src='http://d3js.org/d3.v3.min.js'></script>";
+        echo js_tag('enrollment-visualization');
+        break;
+    case "about":
+        echo js_tag('about');
+        break;
+    }
+?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
