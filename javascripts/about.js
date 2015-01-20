@@ -8,7 +8,7 @@ jQuery(function(){
     carousel = jQuery('#jcarousel-about ul');
 
     for(i in exhibitsJSON){
-
+        console.log(exhibitsJSON[i]);
         exhibit = "<li><a href='" + exhibitsJSON[i].url + "'>";
         exhibit += "<img src='http://54.210.13.122/files/square_thumbnails/";
         exhibit += exhibitsJSON[i].thumb + "' title='" + exhibitsJSON[i].title + "/>";
