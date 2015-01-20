@@ -3,6 +3,7 @@
 jQuery(function(){
 
     jQuery('#jcarousel-about').jcarousel({
+        animation: 'slow'
         
     });
 
