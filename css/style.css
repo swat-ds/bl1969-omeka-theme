@@ -2509,6 +2509,35 @@ div#interviews-gallery .item a h3 {
   z-index: 2;
 }
 
+/* Enrollment Visualization */
+/* * * * * * * * * * * * * * * * * * * * * */
+/* line 179, sass/_blacklib.scss */
+div#enrollment-visualization svg {
+  font-family: 12px sans-serif;
+}
+/* line 183, sass/_blacklib.scss */
+div#enrollment-visualization svg .axis path,
+div#enrollment-visualization svg .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+/* line 189, sass/_blacklib.scss */
+div#enrollment-visualization svg .x.axis path {
+  display: none;
+}
+/* line 192, sass/_blacklib.scss */
+div#enrollment-visualization svg .line {
+  fill: none;
+  stroke-width: 2.5px;
+  stroke: #315a7d;
+}
+/* line 197, sass/_blacklib.scss */
+div#enrollment-visualization svg .area {
+  stroke: none;
+  fill: #b2cce1;
+}
+
 /*
 *
 * Collections Page CSS
