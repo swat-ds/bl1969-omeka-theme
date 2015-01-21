@@ -29,10 +29,14 @@ body{
         background-size: 135px 135px;
 }       
 
-.hTagcloud ul li{
-	display: inline-block;
-	margin: 17px 4px;
-	 a{
+.hTagcloud{
+        border: 1px solid #ddd; 
+        @include border-radius(5px);
+        ul li{
+	    margin: 17px 4px;
+            display: inline-block;
+        }
+        a{
 		color: #fff;
 		padding: 10px 5px;
 		text-decoration: none;
@@ -42,7 +46,8 @@ body{
 		} 
 	a:hover {
 		background-color: lighten($color-contrast, 10%);
-		border: 2px solid lighten($color-primary, 20%)
+		border: 2px solid lighten($color-primary, 20%);
+                padding: 20px 10px;
 	}
 }
 
@@ -208,16 +213,22 @@ div#exhibits-container {
 }
 
 
-/* * * * Home Page * * * */
+/* * * * Main Page * * * */
 
-.jcarousel#jcarousel-home {
+.jcarousel#jcarousel-main {
     a div { 
         position: relative;
         height: 375px;
         background-repeat: no-repeat !important;
         background-size: 100% auto !important;
         background-position: center center !important;
-        h2 { margin: 0; text-align: center; }
+        h2 { 
+            margin: 0;
+            text-align: center;
+            font-family: $font-header;
+            text-transform: uppercase; 
+        }
+        h2:hover { color: $color-contrast; } 
         p { display: none; }
         div{
             position: absolute;
@@ -232,5 +243,19 @@ div#exhibits-container {
     }
 }
 
-#home div#primary h1:nth-child(2), 
-#home p#simple-pages-breadcrumbs { display: none; }
+#main div#primary h1:nth-child(2), 
+#main p#simple-pages-breadcrumbs { display: none; }
+
+/* * * * Tag Cloud * * * */
+
+.items.tags {
+    #content h1:nth-child(1),
+    .secondary-nav{
+        visibility: hidden;
+    }
+    #content h1:nth-child(1):after{ 
+        content: 'Search Items by Tag'; 
+        visibility: visible;
+        display: block;
+    }
+}
