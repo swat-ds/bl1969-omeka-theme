@@ -17,9 +17,9 @@ if(isset($_GET['collection'])){
             echo $out;
         }   
     }
-} elseif (isset($_GET['tag'])){
+} elseif (isset($_GET['tags'])){
 
-    $pageTitle = __($_GET['tag']);
+    $pageTitle = __($_GET['tags']);
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     echo "<h1>" . $pageTitle . "</h1>";    
 }
