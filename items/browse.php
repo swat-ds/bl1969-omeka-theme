@@ -21,7 +21,7 @@ if(isset($_GET['collection'])){
 
     $pageTitle = __($_GET['tags']);
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
-    echo "<h1>" . $pageTitle . "</h1>";    
+    echo "<h1>tag: " . $pageTitle . "</h1>";    
 }
 ?>
 
