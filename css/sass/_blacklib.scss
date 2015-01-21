@@ -208,8 +208,29 @@ div#exhibits-container {
 }
 
 
-/* * * * About Page * * * */
+/* * * * Home Page * * * */
 
-#jcarousel-about ul li {
-
+.jcarousel#jcarousel-home {
+    a div { 
+        position: relative;
+        height: 375px;
+        background-repeat: no-repeat !important;
+        background-size: 100% auto !important;
+        background-position: center center !important;
+        h2 { margin: 0; text-align: center; }
+        p { display: none; }
+        div{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            min-width: 66%;
+            height: 20%;
+            margin-left: 7.5%;
+            padding: 1em 2em;
+            background-color: rgba(255,255,255,.75);
+        }
+    }
 }
+
+#home div#primary h1:nth-child(2), 
+#home p#simple-pages-breadcrumbs { display: none; }

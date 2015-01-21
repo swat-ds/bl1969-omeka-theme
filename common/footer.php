@@ -46,7 +46,7 @@
         break;
     default:
         echo js_tag('exhibits-json');
-        echo js_tag('about');
+        echo js_tag('home-carousel');
         break;
     }
 ?>
