@@ -7,7 +7,7 @@ exhibitsJSON =
     "thumb": "fullsize/8dd5fc5d5a576b1f4e0ad09cd9e9e373.jpg"
   },
   {
-    "title": "Interviews",
+    "title": "Faculty & Alumni Interviews",
     "description": "An exhibit of the interview materials collected during this project, including audio and video files, transcripts, and photographs.",
     "url": "/interviews",
     "thumb": "fullsize/2ceef6c92d074a4a851ec6ce3b13f524.jpg"
@@ -25,7 +25,7 @@ exhibitsJSON =
     "thumb": "fullsize/6f43677f44b827df2a39077825a02ab3.jpg"
   },
   {
-    "title": "1969 Sit-In",
+    "title": "The 1969 Sit-In",
     "description": "Documents and articles relating to the January 1969 SASS occupation of the Admissions Office.",
     "url": "/exhibits/show/1969-sitin",
     "thumb": "fullsize/032b1784bb8cf6b5acf690d401529b41.jpg"
@@ -37,7 +37,7 @@ exhibitsJSON =
     "thumb": "fullsize/5d60c6172050f6d7bc466acc63377e1c.jpg"
   },
   {
-    "title": "Swarthmore and the Rockefeller Fund",
+    "title": "Swarthmore & the Rockefeller Fund",
     "description": "Documents regarding Swarthmore's relationship to the Rockefeller Fund, a non-profit grant given to help increase Black enrollment.",
     "url": "/exhibits/show/swarthmore-rockefeller",
     "thumb": "fullsize/26c21babf3aa8e86ad619695f55c673d.jpg"
@@ -64,7 +64,7 @@ exhibitsJSON =
     "title": "Black Student Enrollment",
     "description": "A visualization of enrollment data provided by the Swarthmore Alumni Relations Office, consisting of the number of graduated and non-graduated alumni who associate with each class year.",
     "url": "/enrollment",
-    "thumb": "fullsize/enrollment_viz.png"
+    "thumb": "fullsize/enrollment_viz_thumb.png"
   },
   {
     "title": "Student Photographs",
