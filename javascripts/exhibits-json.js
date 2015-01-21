@@ -64,7 +64,7 @@ exhibitsJSON =
     "title": "Black Student Enrollment",
     "description": "A visualization of enrollment data provided by the Swarthmore Alumni Relations Office, consisting of the number of graduated and non-graduated alumni who associate with each class year.",
     "url": "/enrollment",
-    "thumb": "fullsize/enrollment_viz_thumb.png"
+    "thumb": "fullsize/enrollment_viz.png"
   },
   {
     "title": "Student Photographs",
