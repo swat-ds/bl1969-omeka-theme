@@ -64,12 +64,18 @@ exhibitsJSON =
     "title": "Black Student Enrollment",
     "description": "A visualization of enrollment data provided by the Swarthmore Alumni Relations Office, consisting of the number of graduated and non-graduated alumni who associate with each class year.",
     "url": "/enrollment",
-    "thumb": "enrollment_viz.png"
+    "thumb": "enrollment_viz_thumb.png"
   },
   {
     "title": "Student Photographs",
     "description": "Photographs identifying many of the key alumni involved in the events related to the black student movement at Swarthmore 1968-1972.",
     "url": "/photos",
     "thumb": "a008acc6a3c11b1fefe5d93ab888e59a.jpg"
+  },
+  {
+    "title": "Mapping the 1969 Sit-in",
+    "description": "An interactive map following the steps of the Black students involved in the Occupation of Parrish Hall in January 1969.",
+    "url": "/neatline/show/sit-in-neatline",
+    "thumb": "sitin_thumb.png"
   }
 ]
