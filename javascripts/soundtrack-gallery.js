@@ -5,8 +5,8 @@ jQuery(function(){
 
     jQuery('div.item.record', jQuery('#soundtrack-exhibit-container'))
         .each(function(){
-            currItem = jQuery(this).children();
-            title = currItem[0].innerText;
+            var currItem = jQuery(this).children();
+            var title = currItem[0].innerText;
             jQuery(currItem[1]).children().attr('title',title);
             jQuery(currItem[1]).attr('href','#void');
         });
@@ -19,10 +19,10 @@ jQuery(function(){
             for(i in d.element_texts){
                 currElement = d.element_texts[i];
                 if(currElement.element.name == 'Player'){
-                    playerHTML = currElement.text;
+                    var playerHTML = currElement.text;
                 }
                 if(currElement.element.name == 'Description'){
-                    description = currElement.text;
+                    var description = currElement.text;
                 }
             }
             description += "&nbsp;&nbsp;<a href='/items/show/" + id;
@@ -37,7 +37,7 @@ jQuery(function(){
 
     jQuery('#soundtrack-exhibit-container .item')
         .on('click', function(d){
-            itemID = jQuery(d.currentTarget)
+            var itemID = jQuery(d.currentTarget)
                 .find('h3 > a').attr('href');
             itemID = itemID.substr(itemID.lastIndexOf('/') + 1);
 

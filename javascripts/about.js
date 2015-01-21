@@ -3,11 +3,11 @@
  
 jQuery(function(){
 
-    carousel = jQuery('#jcarousel-about ul');
+    var carousel = jQuery('#jcarousel-about ul');
 
     for(i in exhibitsJSON){
 
-        exhibit = "<li><a href='" + exhibitsJSON[i].url + "'>";
+        var exhibit = "<li><a href='" + exhibitsJSON[i].url + "'>";
         exhibit += "<div style='background: url(http://54.210.13.122/files/fullsize/";
         exhibit += exhibitsJSON[i].thumb + ")'>";
         exhibit += "<h3>" + exhibitsJSON[i].title + "</h3>";
@@ -17,7 +17,15 @@ jQuery(function(){
         carousel.append(exhibit);
     }
 
-    jQuery('#jcarousel-about').jcarousel({
-        animation: 'slow'
-    });
+    jQuery('#jcarousel-about')
+        .on('jcarousel:create jcarousel:reload', function(){
+
+            var el = jQuery(this),
+                width = el.innerWidth();
+            el.jcarousel('items').css('width', width + 'px');
+
+        })
+        .jcarousel({
+            animation: 'slow'
+        });
 });

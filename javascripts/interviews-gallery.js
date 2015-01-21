@@ -2,11 +2,11 @@
 
 jQuery(function(){
    
-    i = 0; 
+    var i = 0; 
     jQuery('#interviews-gallery .item')
         .each(function(){
-            $title = jQuery(this).find("h3 > a").text(); 
-            $baseURL = 'http://blacklib1969.swarthmore.edu/files/square_thumbnails/';
+            var $title = jQuery(this).find("h3 > a").text(); 
+            var $baseURL = 'http://blacklib1969.swarthmore.edu/files/square_thumbnails/';
             jQuery(this).children('a')
                 .append(["<img src='" + $baseURL + thumbsJSON[i].file + "'/>",
                         "<h3>" + $title + "</h3>"]);

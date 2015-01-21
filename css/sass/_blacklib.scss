@@ -58,8 +58,7 @@ div.exhibit p.tags { display: none; }
 
 p.simplepage-text { padding: 0 1em; }
 
-/* Exhibit Pages */
-/* * * * * * * * * * * * * * * * * * * * * */
+/* * * * Exhibits Page * * * */
 
 .exhibits.show {
     
@@ -94,8 +93,7 @@ p.simplepage-text { padding: 0 1em; }
     }
 } 
 
-/* Show Image */
-/* * * * * * * * * * * * * * * * * * * * * */
+/* * * * Show Image * * * */
 
 #image-preview { max-width: 500px; }
 #dublin-core-title { display: none; }
@@ -112,8 +110,7 @@ div#docsviewer h2,
 div#docsviewer_viewer h2,
 div#moving-image-item-type-metadata-player { display: node; }
 
-/* Soundtrack Exhibit */
-/* * * * * * * * * * * * * * * * * * * * * */
+/* * * * Soundtrack Exhibit * * * */
 
 div#soundtrack-exhibit-player {
     margin-left: auto;
@@ -132,8 +129,7 @@ div#soundtrack-exhibit-container {
     }
 }
 
-/* Interviews Gallery */
-/* * * * * * * * * * * * * * * * * * * * * */
+/* * * * Interviews Gallery * * * */
 
 div#interviews-gallery{
 
@@ -165,8 +161,7 @@ div#interviews-gallery{
     }
 }
 
-/* Enrollment Visualization */
-/* * * * * * * * * * * * * * * * * * * * * */
+/* * * * Enrollment Visualization * * * */
 
 div#enrollment-visualization svg {
 
@@ -192,8 +187,7 @@ div#enrollment-visualization svg {
     }
 }
 
-/* Exhibits List Page */
-/* * * * * * * * * * * * * * * * * * * * * */
+/* * * * Exhibits List Page * * * */
 
 div#exhibits-container {
     width: 90%;
@@ -214,15 +208,8 @@ div#exhibits-container {
 }
 
 
-/* About Page */
-/* * * * * * * * * * * * * * * * * * * * * */
+/* * * * About Page * * * */
 
 #jcarousel-about ul li {
-    width: 500px;
-    height: 500px;
-    h3, p{
-        width: 50%;
-        height: 25%;
-        border: 1px solid #ddd;
-    }
+
 }
