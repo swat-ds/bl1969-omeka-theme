@@ -2303,190 +2303,142 @@ h1 {
 }
 
 /* line 32, sass/_blacklib.scss */
-.hTagcloud {
-  border: 1px solid #ddd;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-/* line 35, sass/_blacklib.scss */
-.hTagcloud ul li {
-  margin: 17px 4px;
-  display: inline-block;
-}
-/* line 39, sass/_blacklib.scss */
-.hTagcloud a {
-  color: #fff;
-  padding: 10px 5px;
-  text-decoration: none;
-  background-color: #08a504;
-  border: 2px solid #067302;
-  border-radius: 20px;
-}
-/* line 47, sass/_blacklib.scss */
-.hTagcloud a:hover {
-  background-color: #09be04;
-  border: 2px solid #505053;
-  padding: 20px 10px;
-}
-
-/* line 54, sass/_blacklib.scss */
 div.exhibit p.tags {
   display: none;
 }
 
-/* line 56, sass/_blacklib.scss */
+/* line 34, sass/_blacklib.scss */
 #primary-nav li.active a, li.active a {
   color: #055a02;
 }
 
-/* line 58, sass/_blacklib.scss */
+/* line 36, sass/_blacklib.scss */
 .element-text, .exhibit-description p, p.simplepage-text, #exhibits-list li p {
   font-size: 1.3em;
   line-height: 1.3em;
 }
 
-/* line 64, sass/_blacklib.scss */
+/* line 42, sass/_blacklib.scss */
 p.simplepage-text {
   padding: 0 1em;
 }
 
 /* * * * Exhibits Page * * * */
-/* line 70, sass/_blacklib.scss */
+/* line 48, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav {
   list-style-type: decimal;
 }
-/* line 73, sass/_blacklib.scss */
+/* line 51, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li {
   padding-bottom: 0;
 }
-/* line 74, sass/_blacklib.scss */
+/* line 52, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li a {
   background: none;
   color: #040404;
   font-size: 1.3em;
 }
-/* line 79, sass/_blacklib.scss */
+/* line 57, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li.current a {
   color: #078C03;
 }
-/* line 80, sass/_blacklib.scss */
+/* line 58, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav a.exhibit-title {
   color: #000;
   font-family: "Bevan";
   font-size: 2.5em;
   text-transform: uppercase;
 }
-/* line 86, sass/_blacklib.scss */
+/* line 64, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li:nth-child(3) {
   display: none;
 }
-/* line 90, sass/_blacklib.scss */
+/* line 68, sass/_blacklib.scss */
 .exhibits.show #content h1 {
   font-family: "Karla";
 }
-/* line 92, sass/_blacklib.scss */
+/* line 70, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-child-nav {
   display: none;
 }
-/* line 94, sass/_blacklib.scss */
+/* line 72, sass/_blacklib.scss */
 .exhibits.show #exhibit-page-navigation {
   font-size: 1.5em;
 }
-/* line 97, sass/_blacklib.scss */
+/* line 75, sass/_blacklib.scss */
 .exhibits.show #exhibit-page-navigation .current-page, .exhibits.show #exhibit-page-navigation #exhibit-nav-up {
   display: none;
 }
 
 /* * * * Show Image * * * */
-/* line 103, sass/_blacklib.scss */
+/* line 81, sass/_blacklib.scss */
 #image-preview {
   max-width: 500px;
 }
 
-/* line 104, sass/_blacklib.scss */
+/* line 82, sass/_blacklib.scss */
 #dublin-core-title {
   display: none;
 }
 
-/* line 105, sass/_blacklib.scss */
+/* line 83, sass/_blacklib.scss */
 div.element-text {
   padding: 1em 0 0 1em;
 }
 
-/* line 108, sass/_blacklib.scss */
+/* line 86, sass/_blacklib.scss */
 #item-metadata .element-set div div, #item-metadata .element-set div h3, #item-metadata .element-set h3, #item-metadata .element-set div, div.element div div, div.element div h3, div.element h3, div.element div {
   display: inline-block;
   float: left;
 }
 
-/* line 114, sass/_blacklib.scss */
+/* line 92, sass/_blacklib.scss */
 div#docsviewer h2,
 div#docsviewer_viewer h2,
 div#moving-image-item-type-metadata-player {
-  display: node;
+  display: none !important;
 }
 
 /* * * * Soundtrack Exhibit * * * */
-/* line 120, sass/_blacklib.scss */
+/* line 98, sass/_blacklib.scss */
 div#soundtrack-exhibit-player {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
 
-/* line 126, sass/_blacklib.scss */
-div#soundtrack-exhibit-container {
-  width: 92%;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 130, sass/_blacklib.scss */
-div#soundtrack-exhibit-container .record {
-  display: inline-block;
-}
-/* line 132, sass/_blacklib.scss */
-div#soundtrack-exhibit-container .item img {
-  max-width: 150px;
-  max-height: 150px;
-}
-/* line 133, sass/_blacklib.scss */
-div#soundtrack-exhibit-container .item .item-description, div#soundtrack-exhibit-container .item h3 {
-  display: none;
-}
-
 /* * * * Interviews Gallery * * * */
-/* line 139, sass/_blacklib.scss */
+/* line 107, sass/_blacklib.scss */
 div#interviews-gallery {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 144, sass/_blacklib.scss */
+/* line 112, sass/_blacklib.scss */
 div#interviews-gallery .record {
   display: inline-block;
   height: 150px;
   width: 150px;
   overflow: hidden;
 }
-/* line 151, sass/_blacklib.scss */
+/* line 119, sass/_blacklib.scss */
 div#interviews-gallery .item img {
   width: 150px;
   height: 150px;
   z-index: 1;
 }
-/* line 152, sass/_blacklib.scss */
+/* line 120, sass/_blacklib.scss */
 div#interviews-gallery .item img:nth-child(2) {
   display: none;
   position: relative;
   top: -150px;
   z-index: 1;
 }
-/* line 158, sass/_blacklib.scss */
+/* line 126, sass/_blacklib.scss */
 div#interviews-gallery .item .item-description, div#interviews-gallery .item h3:first-child {
   display: none;
 }
-/* line 159, sass/_blacklib.scss */
+/* line 127, sass/_blacklib.scss */
 div#interviews-gallery .item a h3 {
   position: relative;
   margin: 0 15px;
@@ -2496,41 +2448,41 @@ div#interviews-gallery .item a h3 {
 }
 
 /* * * * Enrollment Visualization * * * */
-/* line 171, sass/_blacklib.scss */
+/* line 139, sass/_blacklib.scss */
 div#enrollment-visualization svg {
   font-family: 12px sans-serif;
 }
-/* line 175, sass/_blacklib.scss */
+/* line 143, sass/_blacklib.scss */
 div#enrollment-visualization svg .axis path,
 div#enrollment-visualization svg .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
-/* line 181, sass/_blacklib.scss */
+/* line 149, sass/_blacklib.scss */
 div#enrollment-visualization svg .x.axis path {
   display: none;
 }
-/* line 184, sass/_blacklib.scss */
+/* line 152, sass/_blacklib.scss */
 div#enrollment-visualization svg .line {
   fill: none;
   stroke-width: 2.5px;
   stroke: #315a7d;
 }
-/* line 189, sass/_blacklib.scss */
+/* line 157, sass/_blacklib.scss */
 div#enrollment-visualization svg .area {
   stroke: none;
   fill: #b2cce1;
 }
 
 /* * * * Exhibits List Page * * * */
-/* line 197, sass/_blacklib.scss */
+/* line 165, sass/_blacklib.scss */
 div#exhibits-container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 201, sass/_blacklib.scss */
+/* line 169, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview {
   width: 45%;
   min-width: 310px;
@@ -2540,22 +2492,22 @@ div#exhibits-container div.exhibit-preview {
   padding: 1em 1em 0 1em;
   margin: 0 1em;
 }
-/* line 209, sass/_blacklib.scss */
+/* line 177, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview a img.thumb {
   width: 200px;
   height: 200px;
 }
-/* line 210, sass/_blacklib.scss */
+/* line 178, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview div {
   vertical-align: top;
 }
-/* line 212, sass/_blacklib.scss */
+/* line 180, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview:hover {
   background: #ddd;
 }
 
 /* * * * Main Page * * * */
-/* line 219, sass/_blacklib.scss */
+/* line 187, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div {
   position: relative;
   height: 375px;
@@ -2563,22 +2515,22 @@ div#exhibits-container div.exhibit-preview:hover {
   background-size: 100% auto !important;
   background-position: center center !important;
 }
-/* line 225, sass/_blacklib.scss */
+/* line 193, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div h2 {
   margin: 0;
   text-align: center;
   font-family: "Bevan";
   text-transform: uppercase;
 }
-/* line 231, sass/_blacklib.scss */
+/* line 199, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div h2:hover {
   color: #078C03;
 }
-/* line 232, sass/_blacklib.scss */
+/* line 200, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div p {
   display: none;
 }
-/* line 233, sass/_blacklib.scss */
+/* line 201, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div div {
   position: absolute;
   bottom: 0;
@@ -2590,23 +2542,81 @@ div#exhibits-container div.exhibit-preview:hover {
   background-color: rgba(255, 255, 255, 0.75);
 }
 
-/* line 246, sass/_blacklib.scss */
+/* line 214, sass/_blacklib.scss */
 #main div#primary h1:nth-child(2),
 #main p#simple-pages-breadcrumbs {
   display: none;
 }
 
 /* * * * Tag Cloud * * * */
-/* line 252, sass/_blacklib.scss */
+/* line 220, sass/_blacklib.scss */
 .items.tags #content h1:nth-child(1),
 .items.tags .secondary-nav {
   visibility: hidden;
 }
-/* line 256, sass/_blacklib.scss */
+/* line 224, sass/_blacklib.scss */
 .items.tags #content h1:nth-child(1):after {
   content: 'Search Items by Tag';
   visibility: visible;
   display: block;
+}
+
+/* line 231, sass/_blacklib.scss */
+.hTagcloud {
+  border: 1px solid #ddd;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 234, sass/_blacklib.scss */
+.hTagcloud ul li {
+  margin: 17px 4px;
+  display: inline-block;
+  font-family: "Special Elite";
+}
+/* line 239, sass/_blacklib.scss */
+.hTagcloud a {
+  color: #fff;
+  padding: 10px 5px;
+  text-decoration: none;
+  background-color: #08a504;
+  border: 2px solid #067302;
+  border-radius: 20px;
+}
+/* line 247, sass/_blacklib.scss */
+.hTagcloud a:hover {
+  background-color: #09be04;
+  border: 2px solid #505053;
+  padding: 20px 10px;
+}
+
+/* * * * Advanced Search * * * */
+/* line 256, sass/_blacklib.scss */
+.items.advanced-search .secondary-nav {
+  display: none;
+}
+
+/* line 257, sass/_blacklib.scss */
+form#advanced-search-form {
+  max-width: 70%;
+  padding: 1em;
+  border: 1px solid #ddd;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 262, sass/_blacklib.scss */
+form#advanced-search-form div:nth-child(3),
+form#advanced-search-form div:nth-child(n+6) {
+  display: none;
+}
+/* line 265, sass/_blacklib.scss */
+form#advanced-search-form div.field label, form#advanced-search-form div.label {
+  font-size: 1.5em;
+}
+/* line 268, sass/_blacklib.scss */
+form#advanced-search-form input, form#advanced-search-form select, form#advanced-search-form button {
+  margin: 1em 1em 0 0;
 }
 
 /*

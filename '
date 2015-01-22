@@ -29,6 +29,23 @@ body{
         background-size: 135px 135px;
 }       
 
+.hTagcloud ul li{
+	display: inline-block;
+	margin: 17px 4px;
+	 a{
+		color: #fff;
+		padding: 10px 5px;
+		text-decoration: none;
+		background-color: lighten($color-contrast, 5%);
+		border: 2px solid darken($color-contrast, 5%);
+		border-radius: 20px;
+		} 
+	a:hover {
+		background-color: lighten($color-contrast, 10%);
+		border: 2px solid lighten($color-primary, 20%)
+	}
+}
+
 div.exhibit p.tags { display: none; }
 
 #primary-nav li.active a, li.active a{ color: darken($color-contrast,10%); }
@@ -91,7 +108,7 @@ div.element-text { padding: 1em 0 0 1em; }
 
 div#docsviewer h2,
 div#docsviewer_viewer h2,
-div#moving-image-item-type-metadata-player { display: none !important; }
+div#moving-image-item-type-metadata-player { display: node; }
 
 /* * * * Soundtrack Exhibit * * * */
 
@@ -101,6 +118,16 @@ div#soundtrack-exhibit-player {
     width: 70%; 
 }
 
+div#soundtrack-exhibit-container {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    .record { display: inline-block; }
+    .item { 
+        img { max-width: 150px; max-height: 150px; }     
+        .item-description, h3 { display: none; }
+    }
+}
 
 /* * * * Interviews Gallery * * * */
 
@@ -181,89 +208,20 @@ div#exhibits-container {
 }
 
 
-/* * * * Main Page * * * */
+/* * * * About Page * * * */
 
-.jcarousel#jcarousel-main {
+.jcarousel#jcarousel-about {
     a div { 
-        position: relative;
         height: 375px;
         background-repeat: no-repeat !important;
-        background-size: 100% auto !important;
+        background-size: 75% auto !important;
         background-position: center center !important;
-        h2 { 
-            margin: 0;
-            text-align: center;
-            font-family: $font-header;
-            text-transform: uppercase; 
-        }
-        h2:hover { color: $color-contrast; } 
-        p { display: none; }
         div{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            min-width: 66%;
-            height: 20%;
-            margin-left: 7.5%;
-            padding: 1em 2em;
-            background-color: rgba(255,255,255,.75);
+            width: 100%;
+            height: 25%;
+            padding-left: 1em;
+            vertical-align: bottom;
+            border: 1px solid #000;  
         }
     }
-}
-
-#main div#primary h1:nth-child(2), 
-#main p#simple-pages-breadcrumbs { display: none; }
-
-/* * * * Tag Cloud * * * */
-
-.items.tags {
-    #content h1:nth-child(1),
-    .secondary-nav{
-        visibility: hidden;
-    }
-    #content h1:nth-child(1):after{ 
-        content: 'Search Items by Tag'; 
-        visibility: visible;
-        display: block;
-    }
-}
-
-.hTagcloud{
-        border: 1px solid #ddd; 
-        @include border-radius(5px);
-        ul li{
-	    margin: 17px 4px;
-            display: inline-block;
-            font-family: $font-primary-family;
-        }
-        a{
-		color: #fff;
-		padding: 10px 5px;
-		text-decoration: none;
-		background-color: lighten($color-contrast, 5%);
-		border: 2px solid darken($color-contrast, 5%);
-		border-radius: 20px;
-	} 
-	a:hover{
-        	background-color: lighten($color-contrast, 10%);
-		border: 2px solid lighten($color-primary, 20%);
-                padding: 20px 10px;
-        }	
-}
-
-/* * * * Advanced Search * * * */
-
-.items.advanced-search .secondary-nav { display: none; }
-form#advanced-search-form {
-    max-width: 70%;
-    padding: 1em;
-    border: 1px solid #ddd;
-    @include border-radius(10px);
-    div:nth-child(3), 
-    div:nth-child(n+6)
-    { display: none; }
-    div.field label, div.label { 
-        font-size: 1.5em;
-    }
-    input,select,button { margin: 1em 1em 0 0; } 
 }

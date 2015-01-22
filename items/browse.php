@@ -7,7 +7,6 @@ if(isset($_GET['collection'])){
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
     echo "<h1>" . $pageTitle . "</h1>";
-
     $elements_array = array('Description', 'Source');
     foreach ($elements_array as $element) {
         $element_text = metadata($current_collection, array('Dublin Core', $element));

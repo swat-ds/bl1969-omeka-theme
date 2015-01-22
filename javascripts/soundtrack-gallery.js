@@ -3,13 +3,26 @@
 
 jQuery(function(){
 
-    jQuery('div.item.record', jQuery('#soundtrack-exhibit-container'))
+    jQuery('#soundtrack .jcarousel').jcarousel('items')
         .each(function(){
-            var currItem = jQuery(this).children();
-            var title = currItem[0].innerText;
-            jQuery(currItem[1]).children().attr('title',title);
-            jQuery(currItem[1]).attr('href','#void');
+            var currItem = jQuery(this).find('a');
+            currItem.find('img').attr('title','title');
+            console.log(currItem);
+            var itemID = currItem.attr('href');
+            itemID = itemID.substr(itemID.lastIndexOf('/') + 1);
+            currItem.attr('data-item-id',itemID);
+            currItem.attr('href','#void');
         });
+
+    jQuery('#soundtrack .jcarousel')
+        .jcarousel({
+            animation: 'fast',
+        })
+        .on('jcarousel:create jcarousel:reload', function(){
+            jQuery(this).jcarousel('items')
+                .css('width', '150px');
+        })
+        .jcarousel('reload');
 
     function getPlayerFromID(id){
 
@@ -33,14 +46,13 @@ jQuery(function(){
         });
     }
 
-    getPlayerFromID(1263);
-
-    jQuery('#soundtrack-exhibit-container .item')
+    getPlayerFromID(1253);
+    
+    jQuery('#soundtrack .jcarousel li')
         .on('click', function(d){
             var itemID = jQuery(d.currentTarget)
-                .find('h3 > a').attr('href');
-            itemID = itemID.substr(itemID.lastIndexOf('/') + 1);
-
+                            .find('a').attr('data-item-id');
+            console.log(itemID);
             getPlayerFromID(itemID);
 
         });
