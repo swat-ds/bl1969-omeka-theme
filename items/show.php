@@ -2,6 +2,7 @@
 <div id="primary">
     <h1><?php echo metadata('item', array('Dublin Core','Title')); ?></h1>
 
+    <!-- Based on item type and format, decides what viewer/player to display first -->
     <?php
 
         $type = metadata($item, 'item_type_name');
@@ -17,6 +18,9 @@
             echo metadata($item, array('Item Type Metadata', 'Player'));
         } elseif($type == 'Oral History' && 
             metadata($item, array('Dublin Core','Source')) ) {
+            
+            echo metadata($item, array('Dublin Core','Format'));
+            echo metadata($item, array('Dublin Core','Player'));
             echo metadata($item, array('Dublin Core','Source'));
         }
     ?>
