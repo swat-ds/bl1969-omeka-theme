@@ -18,12 +18,19 @@
             echo metadata($item, array('Item Type Metadata', 'Player'));
         } elseif($type == 'Oral History' && 
             metadata($item, array('Dublin Core','Source')) ) {
-            
-            echo metadata($item, array('Dublin Core','Format'));
-            echo metadata($item, array('Dublin Core','Player'));
             echo metadata($item, array('Dublin Core','Source'));
-        }
-    ?>
+        } elseif($type == 'Oral History' && 
+            stripos(metadata($item, array('Dublin Core', 'Format')), 'mp3') !== false) {
+            $itemFiles =  files_for_item(array(
+                'linkAttributes' => array('target' => '_blank'),
+                'imgAttributes' => array('id' => 'image-preview'),
+                'imageSize' => 'thumbnail'
+            ),$item);
+            $filesArray = explode("</div>", $itemFiles);
+            echo "<div class='audio-interview'>";
+            echo $filesArray[0] . "</div>";
+            echo $filesArray[1] . "</div></div>";
+        }?>
 
    <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
 

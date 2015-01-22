@@ -8,10 +8,6 @@ var thumbsJSON = [
 	"file": "42b6040e9437aed68edcb8179d306270.jpg"
 },
 { 
-	"name": "Black Studies",
-	"file": "155994501356ad05a320cdaa2da369be.jpg"
-},
-{ 
 	"name": "Warren",
 	"file": "9f8399fd81eaa2726d0e7614e838559d.jpg"
 },
@@ -43,9 +39,13 @@ var thumbsJSON = [
 	"name": "Baynes",
 	"file": "09551790e7f50c7bd0f18430b6d781b7.jpg"
 },
-{ 
+{
 	"name": "Maye",
 	"file": "e3bd867fc14bc585033a2a07e0333b6e.jpg"
+},
+{ 
+	"name": "Holifield",
+	"file": "9f3332c096da7f90806c24eae99c5b0c.jpg"
 },
 { 
 	"name": "Men",
@@ -77,7 +77,7 @@ var thumbsJSON = [
 },
 { 
 	"name": "Sisters",
-	"file": "cfebd31889e007b02a17fc4f86d5cfde.jpg"
+	"file": "71080a4329ad6ee0de323c7491a97f28.jpg"
 },
 { 
 	"name": "Piker",

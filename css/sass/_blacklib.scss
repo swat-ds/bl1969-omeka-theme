@@ -33,7 +33,11 @@ div.exhibit p.tags { display: none; }
 
 #primary-nav li.active a, li.active a{ color: darken($color-contrast,10%); }
 
-.element-text, .exhibit-description p, p.simplepage-text, #exhibits-list li p
+.element-text,
+.exhibit-description p, 
+p.simplepage-text, 
+#exhibits-list li p,
+.exhibits.show div.exhibit-block p
 {
 	font-size: 1.3em;
 	line-height: 1.3em;
@@ -92,6 +96,25 @@ div.element-text { padding: 1em 0 0 1em; }
 div#docsviewer h2,
 div#docsviewer_viewer h2,
 div#moving-image-item-type-metadata-player { display: none !important; }
+
+div.audio-interview {
+    padding: 1em 1em 2em 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ddd;
+    width: 430px;
+    @include border-radius(10px);
+    div.image-jpeg:first-child{
+        height: 400px;
+        overflow: hidden;
+        img { width: 400px; }
+    } 
+}
+
+/* * * * Exhibits * * * */
+
+div.exhibit-image a img {
+    width: 500px;
+}
 
 /* * * * Soundtrack Exhibit * * * */
 
@@ -266,4 +289,14 @@ form#advanced-search-form {
         font-size: 1.5em;
     }
     input,select,button { margin: 1em 1em 0 0; } 
+}
+
+/* * * * About Page * * * */
+
+#about div#about-header {
+    height: 375px;
+    margin: 0 1em;
+    background-position: -250px -400px !important;
+    background-size: 125% auto !important;
+    background-repeat: no-repeat !important;
 }
