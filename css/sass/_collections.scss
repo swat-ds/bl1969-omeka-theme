@@ -6,6 +6,8 @@
 * 
 */
 
+@mixin background();
+
 $collections-text-color: rgba(225,225,225,.6);
 $gradient-top: rgba(50,50,50,.6);
 $gradient-bottom: rgba(0,0,0,0);
@@ -62,92 +64,92 @@ $gradient-bottom: rgba(0,0,0,0);
 
 	#blackswarthmore{
 		@include background(image-url("/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#halcyon{
 		background-size: 400px 400px;
 		@include background( image-url("/files/original/9f3332c096da7f90806c24eae99c5b0c.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#narratives{
 		@include background( image-url("/files/fullsize/03c7e5cef9f2230083e17b403110f335.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: 0px 38%;
 	}
 
 	#blackphilosophies{
 		@include background( image-url("/files/fullsize/8dd5fc5d5a576b1f4e0ad09cd9e9e373.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#mediafellows{
 		@include background( image-url("/files/fullsize/c0a24bba8509defe8c0f4b17c12d4a2e.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#chesterhomes{
 		@include background( image-url("/files/fullsize/ea7fdeedbb4e73477895abba21d6ba57.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: bottom right;
 	}
 
 	#fhlrefs{
 		@include background( image-url("/files/fullsize/cec03e328f658884a1e20b68492f9090.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center right;
 	}
 
 	#bccrecords{
 		@include background( image-url("/files/fullsize/c3149a8103ab6c6f51010a1561f2cf8d.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center right;
 	}
 
 	#students{
 		@include background( image-url("/files/fullsize/9f8399fd81eaa2726d0e7614e838559d.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#interviews{
 		@include background( image-url("/files/fullsize/e0155c1b57f92c6468f30ec1d8bba2eb.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#swarthmorean{
 		@include background( image-url("/files/fullsize/7897a6cea33f74a323828b04adf52559.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#delcotimes{
 		@include background( image-url("/files/fullsize/a29663d7cd6a72bd50c85118bd8b0f0d.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#robcross{
 		@include background( image-url("/files/fullsize/9363b806296723780296e0d746c3fe12.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#courtneysmith{
 		@include background( image-url("/files/fullsize/491af50d4c031fde6cb9c0528f3594fb.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#phoenix{
 		@include background( image-url("/files/fullsize/1653746fb11685df22b980e5d563f3eb.jpg"),
-		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
+		linear-gradient(to bottom center, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 }
