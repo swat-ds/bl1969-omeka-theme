@@ -1,10 +1,8 @@
 @import "normalize";
 @import "compass";
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
-@import url(http://fonts.googleapis.com/css?family=Karla);
-@import url(http://fonts.googleapis.com/css?family=Black+Ops+One);
-@import url(http://fonts.googleapis.com/css?family=Ultra);
-@import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Expanded);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import url(http://fonts.googleapis.com/css?family=Bevan);
 
 /* * * * * * * * * * *
@@ -15,8 +13,9 @@
 
  * * * * * * * * * * */
 $font-primary-family:'Special Elite';
-$font-secondary-family:'Karla';
-$font-header: 'Bevan';
+$font-secondary-family: 'Droid Serif';
+$font-primary-header: 'Bevan';
+$font-secondary-header: 'Source Sans Pro';
 $color-primary: #1e1e1f;
 $color-contrast: #078C03;
 $color-dark: #040404;

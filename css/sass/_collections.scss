@@ -6,6 +6,8 @@
 * 
 */
 
+$collections-text-color: rgba(200,200,200,.4);
+
 #collections-page {
   width: 97%;
   margin-left: auto;
@@ -18,39 +20,40 @@
 	overflow: hidden;
 	margin: .5%;
 	cursor: pointer;
-}
+    }
   h4{
-        color: white;
-	font-weight: bold;
+        color: $collections-text-color;
 	font-size: 16pt;
 	padding-top: 35px;
 	text-align: center;
-}
+    }
 
   h5{
-	color: white;
+	color: $collections-text-color;
 	text-align: center;
 	padding-top: 34px;
 	margin-bottom: -68px;
 	font-variant: small-caps;
 	font-size: 11pt;
-}
+    }
 
   p{
+        color: $collections-text-color;
 	display: none;
 	text-align: center;
 	padding-top: 35px;
-	text-shadow: -1px 0 #444, 0 1px #444, 1px 0 444, 0 -1px #444;
 	color: white;
-}
+        font-size: .8 * $base-font-size;
+        line-height: .8 * $base-line-height;
+    }
 
  :hover p{
 	display: block;
-}
+    }
 
  :hover h4,  :hover h5{
 	display: none;
-}
+    }   
 
   #blackswarthmore,   #halcyon,   #narratives,   #blackphilosophies,   #mediafellows,   #chesterhomes,   #fhlrefs,   #students{
 	background:   linear-gradient(

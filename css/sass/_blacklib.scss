@@ -10,12 +10,12 @@ body{
 	font-family: $font-secondary-family;
 }
 
-#{headings(1,6)}{ 
-	font-family: $font-secondary-family,"Helvetica Neue", sans-serif;
+#{headings(2,6)}{ 
+	font-family: $font-secondary-header;
 }
 
 #{headings(1)}{
-	font-family: $font-header, serif;
+	font-family: $font-primary-header;
 }
 
 #site-title a{
@@ -31,7 +31,18 @@ body{
 
 div.exhibit p.tags { display: none; }
 
-#primary-nav li.active a, li.active a{ color: darken($color-contrast,10%); }
+#primary-nav{
+    font-family: $font-secondary-header;
+    font-size: .80 * $base-font-size;
+    li.active a, li.active a{
+    color: darken($color-contrast,10%);
+    }
+}
+
+p#simple-pages-breadcrumbs {
+    font-family: $font-secondary-header;
+    font-size: .80 * $base-font-size;
+}
 
 .element-text,
 .exhibit-description p, 
@@ -61,7 +72,7 @@ p.simplepage-text { padding: 0 1em; }
         li.current a{ color: $color-contrast; }
         a.exhibit-title{ 
             color:#000;
-            font-family: $font-header;
+            font-family: $font-primary-header;
             font-size: 2 * $base-font-size;
             text-transform: uppercase;
         }
@@ -243,7 +254,7 @@ div#exhibits-container {
         h2 { 
             margin: 0;
             text-align: center;
-            font-family: $font-header;
+            font-family: $font-primary-header;
             text-transform: uppercase; 
         }
         h2:hover { color: $color-contrast; } 
