@@ -61,7 +61,7 @@ $gradient-bottom: rgba(0,0,0,0);
 	}   
 
 	#blackswarthmore{
-		@include background(image-url("/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg""),
+		@include background(image-url("/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg"),
 		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
