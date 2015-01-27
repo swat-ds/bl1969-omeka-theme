@@ -39,8 +39,8 @@ p.simplepage-text,
 #exhibits-list li p,
 .exhibits.show div.exhibit-block p
 {
-	font-size: 1.3em;
-	line-height: 1.3em;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
 }
 
 p.simplepage-text { padding: 0 1em; }
@@ -56,13 +56,13 @@ p.simplepage-text { padding: 0 1em; }
         li a{ 
             background: none; 
             color: $color-dark;
-            font-size: 1.3em; 
+            font-size: $base-font-size; 
         }
         li.current a{ color: $color-contrast; }
         a.exhibit-title{ 
             color:#000;
             font-family: $font-header;
-            font-size: 2.5em;
+            font-size: 2 * $base-font-size;
             text-transform: uppercase;
         }
         li:nth-child(3){ display: none; }
@@ -75,7 +75,7 @@ p.simplepage-text { padding: 0 1em; }
 
     #exhibit-page-navigation { 
 
-        font-size: 1.5em; 
+        font-size: $base-font-size; 
         .current-page, #exhibit-nav-up { display: none; }
     }
 } 
@@ -134,8 +134,8 @@ div.exhibit-image a img {
             height: 500px;
         }
         p {
-            font-size: 1.1em;
-            line-height: 1em;
+            font-size: $base-font-size;
+            line-height: $base-line-height;
         } 
     }
    div.narrative-heading:hover{
@@ -313,7 +313,7 @@ form#advanced-search-form {
     div:nth-child(n+6)
     { display: none; }
     div.field label, div.label { 
-        font-size: 1.5em;
+        font-size: $base-font-size;
     }
     input,select,button { margin: 1em 1em 0 0; } 
 }
