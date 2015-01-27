@@ -6,16 +6,18 @@ if(isset($_GET['collection'])){
     $pageTitle = __(metadata($current_collection, array('Dublin Core','Title')));
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
+    echo "<div class='collections-browse-metadata'>";
     echo "<h1>" . $pageTitle . "</h1>";
     $elements_array = array('Description', 'Source');
     foreach ($elements_array as $element) {
         $element_text = metadata($current_collection, array('Dublin Core', $element));
         if($element_text){
-            $out = "<h2>" . $element . "</h2>";
-            $out .= "<h3>" . $element_text . "</h3>";
+            $out = "<h3>" . $element . "</h3>";
+            $out .= "<h4>" . $element_text . "</h4>";
             echo $out;
         }   
     }
+    echo "</div>";
 } elseif (isset($_GET['tags'])){
 
     $pageTitle = __($_GET['tags']);
@@ -24,7 +26,7 @@ if(isset($_GET['collection'])){
 }
 ?>
 
-<h2><?php echo __('(%s total items)', $total_results); ?></h2>
+<h3><?php echo __('(%s total items)', $total_results); ?></h3>
 <?php echo pagination_links(); ?>
 
 <?php if ($total_results > 0): ?>

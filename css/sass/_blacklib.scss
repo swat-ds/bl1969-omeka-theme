@@ -21,12 +21,19 @@ body{
 #site-title a{
 
 	font-family: $font-primary-family;
-        display: inline-block;
-        width: 135px;
-        height: 135px;
-        padding-left: 150px;
-        background: url(fawo_lg.gif) no-repeat bottom;
-        background-size: 135px 135px;
+	font-size: 2.5 * $base-font-size;
+        display: block;
+        padding: 10px 0 0 275px;
+        width: 500px;
+        height: 200px;
+        @media screen and (max-width: 960px) {
+            width: 400px;
+            height: 100%;
+            padding-top: 0px;    
+        }
+        vertical-align: bottom;
+        background: url(logo_small.jpg) no-repeat left center;
+        background-size: auto 100%;
 }       
 
 div.exhibit p.tags { display: none; }
@@ -39,9 +46,24 @@ div.exhibit p.tags { display: none; }
     }
 }
 
-p#simple-pages-breadcrumbs {
+p#simple-pages-breadcrumbs,
+div#footer-content{
     font-family: $font-secondary-header;
     font-size: .80 * $base-font-size;
+}
+
+div#footer-content p {
+    display: none;
+}
+
+div#sort-links{
+    font-family: $font-secondary-header;
+    font-size: $base-font-size;
+}
+
+div#collections-browse-metadata{
+
+
 }
 
 .element-text,
@@ -95,18 +117,26 @@ p.simplepage-text { padding: 0 1em; }
 
 #image-preview { max-width: 500px; }
 #dublin-core-title { display: none; }
-div.element-text { padding: 1em 0 0 1em; }
+div.element-text { 
+    padding: 1.25em 0 0 1em;
+ }
 #item-metadata .element-set, div.element { 
 
     div div, div h3, h3,  div { 
-        display: inline-block;
-        float: left; 
+        display: inline-block !important;
+        float: left !important; 
     }
 }
 
 div#docsviewer h2,
 div#docsviewer_viewer h2,
 div#moving-image-item-type-metadata-player { display: none !important; }
+
+docsviewer_viewer ifram{
+    @media screen and (min-width: 768px){
+        width: 100% !important;
+    }
+}
 
 div.audio-interview {
     padding: 1em 1em 2em 1em;
@@ -230,11 +260,15 @@ div#exhibits-container {
     div.exhibit-preview { 
         width: 45%;
         min-width: 310px; 
-        height: 375px;
+        height: 385px;
+        @media screen and (max-width:960px){
+            height: 100%;
+        }
         float: left; border-bottom: 1px solid #ddd;
-        padding: 1em 1em 0 1em;
+        padding: 1em  1em 0 1em;
         margin: 0 1em;
-        
+        font-size: .8 * $base-font-size; 
+        line-height: .8 * $base-line-height; 
         a img.thumb{ width: 200px; height: 200px; }
         div { vertical-align: top; }
     }
@@ -280,7 +314,7 @@ div#exhibits-container {
 .items.tags {
     #content h1:nth-child(1),
     .secondary-nav{
-        visibility: hidden;
+        display: none;
     }
     #content h1:nth-child(1):after{ 
         content: 'Search Items by Tag'; 
@@ -298,17 +332,19 @@ div#exhibits-container {
             font-family: $font-primary-family;
         }
         a{
-		color: #fff;
+		color: rgba(225,225,225,.75);
 		padding: 10px 5px;
 		text-decoration: none;
-		background-color: lighten($color-contrast, 5%);
-		border: 2px solid darken($color-contrast, 5%);
+		background-color: lighten($color-primary, 5%);
+		border: 2px solid darken($color-primary, 5%);
 		border-radius: 20px;
+                opacity: .8;
 	} 
 	a:hover{
-        	background-color: lighten($color-contrast, 10%);
-		border: 2px solid lighten($color-primary, 20%);
+        	background-color: darken($color-contrast, 5%);
+		border: 2px solid darken($color-contrast, 10%);
                 padding: 20px 10px;
+                opacity: .5;
         }	
 }
 
@@ -325,6 +361,7 @@ form#advanced-search-form {
     { display: none; }
     div.field label, div.label { 
         font-size: $base-font-size;
+        border-bottom: 1px solid #ddd;
     }
     input,select,button { margin: 1em 1em 0 0; } 
 }
@@ -336,5 +373,8 @@ form#advanced-search-form {
     margin: 0 1em;
     background-position: -250px -400px !important;
     background-size: 125% auto !important;
+    @media screen and (max-width:768px){
+        background-position: bottom right !important;
+    }
     background-repeat: no-repeat !important;
 }
