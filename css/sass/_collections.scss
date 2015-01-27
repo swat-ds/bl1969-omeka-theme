@@ -9,10 +9,11 @@
 $collections-text-color: rgba(200,200,200,.4);
 
 #collections-page {
-  width: 97%;
-  margin-left: auto;
-  margin-right: auto;
-  div{
+	width: 97%;
+	margin-left: auto;
+	margin-right: auto;
+
+	div{
 	float: left;
 	width: 290px;
 	padding: .5%;
@@ -20,170 +21,124 @@ $collections-text-color: rgba(200,200,200,.4);
 	overflow: hidden;
 	margin: .5%;
 	cursor: pointer;
-    }
-  h4{
-        color: $collections-text-color;
+	}
+
+	h4{
+	    color: $collections-text-color;
 	font-size: 16pt;
 	padding-top: 35px;
 	text-align: center;
-    }
+	}
 
-  h5{
+	h5{
 	color: $collections-text-color;
 	text-align: center;
 	padding-top: 34px;
 	margin-bottom: -68px;
 	font-variant: small-caps;
 	font-size: 11pt;
-    }
+	}
 
-  p{
-        color: $collections-text-color;
+	p{
+	    color: $collections-text-color;
 	display: none;
 	text-align: center;
 	padding-top: 35px;
 	color: white;
-        font-size: .8 * $base-font-size;
-        line-height: .8 * $base-line-height;
-    }
+	    font-size: .8 * $base-font-size;
+	    line-height: .8 * $base-line-height;
+	}
 
- :hover p{
+	:hover p{
 	display: block;
-    }
+	}
 
- :hover h4,  :hover h5{
+	:hover h4,  :hover h5{
 	display: none;
-    }   
+	}   
 
-  #blackswarthmore,   #halcyon,   #narratives,   #blackphilosophies,   #mediafellows,   #chesterhomes,   #fhlrefs,   #students{
-	background:   linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),;
-	background-size: 100%;
-}
+	div{
+		background: linear-gradient(
+		rgba(0, 0, 0, 0.6), 
+		rgba(0, 0, 0, 0.6)
+		);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
 
-#blackswarthmore{
-	background: linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	), 
-	url(/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg) no-repeat center center;
-	background-size: 100%;
-}
+	#blackswarthmore{
+		background-image: url(/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg) 
+		background-position: center center;
+	}
 
-#halcyon{
-	background-size: 400px 400px;
-	background:  linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),url(/files/original/9f3332c096da7f90806c24eae99c5b0c.jpg) no-repeat center center;
-}
+	#halcyon{
+		background-size: 400px 400px;
+		background-image: url(/files/original/9f3332c096da7f90806c24eae99c5b0c.jpg);
+		background-position: center center;
+	}
 
-#narratives{
-	background:  linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),url(/files/fullsize/03c7e5cef9f2230083e17b403110f335.jpg) no-repeat 0px 38%;
-	background-size: 100% auto;
-	-webkit-filter: grayscale(100%);
-	-moz-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
+	#narratives{
+		background-image: url(/files/fullsize/03c7e5cef9f2230083e17b403110f335.jpg);
+		background-position: 0px 38%;
+	}
 
-#blackphilosophies{
-	background:  linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),url(/files/fullsize/8dd5fc5d5a576b1f4e0ad09cd9e9e373.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#blackphilosophies{
+		background-image: url(/files/fullsize/8dd5fc5d5a576b1f4e0ad09cd9e9e373.jpg);
+		background-position: center center;
+	}
 
-#mediafellows{
-	background:  linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),url(/files/fullsize/c0a24bba8509defe8c0f4b17c12d4a2e.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#mediafellows{
+		background-image: url(/files/fullsize/c0a24bba8509defe8c0f4b17c12d4a2e.jpg);
+		background-position: center center;
+	}
 
-#chesterhomes{
-	background:  linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),url(/files/fullsize/ea7fdeedbb4e73477895abba21d6ba57.jpg) no-repeat bottom right;
-	background-size: 100% auto;
-}
+	#chesterhomes{
+		background-image: url(/files/fullsize/ea7fdeedbb4e73477895abba21d6ba57.jpg);
+		background-position: bottom right;
+	}
 
-#fhlrefs{
-	background:  linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),url(/files/fullsize/cec03e328f658884a1e20b68492f9090.jpg) no-repeat center right;
-	background-size: 100% auto;
-}
+	#fhlrefs{
+		background-image: url(/files/fullsize/cec03e328f658884a1e20b68492f9090.jpg);
+		background-position: center right;
+	}
 
-#bccrecords{
-	background: linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	), url(/files/fullsize/c3149a8103ab6c6f51010a1561f2cf8d.jpg) no-repeat center right;
-	background-size: 100% auto;
-}
+	#bccrecords{
+		background-image: url(/files/fullsize/c3149a8103ab6c6f51010a1561f2cf8d.jpg);
+		background-position: center right;
+	}
 
-#students{
-	background:  linear-gradient(
-	rgba(0, 0, 0, 0.6), 
-	rgba(0, 0, 0, 0.6)
-	),url(/files/fullsize/9f8399fd81eaa2726d0e7614e838559d.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#students{
+		background-image: url(/files/fullsize/9f8399fd81eaa2726d0e7614e838559d.jpg);
+		background-position: center center;
+	}
 
-#interviews{
-	background:   linear-gradient(
-	rgba(0, 0, 0, 0.7), 
-	rgba(0, 0, 0, 0.7)
-	), url(/files/fullsize/e0155c1b57f92c6468f30ec1d8bba2eb.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#interviews{
+		background-image:  url(/files/fullsize/e0155c1b57f92c6468f30ec1d8bba2eb.jpg);
+		background-position: center center;
+	}
 
-#swarthmorean{
-	background:   linear-gradient(
-	rgba(0, 0, 0, 0.7), 
-	rgba(0, 0, 0, 0.7)
-	), url(/files/fullsize/7897a6cea33f74a323828b04adf52559.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#swarthmorean{
+		background-image:  url(/files/fullsize/7897a6cea33f74a323828b04adf52559.jpg);
+		background-position: center center;
+	}
 
-#delcotimes{
-	background:   linear-gradient(
-	rgba(0, 0, 0, 0.7), 
-	rgba(0, 0, 0, 0.7)
-	), url(/files/fullsize/a29663d7cd6a72bd50c85118bd8b0f0d.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#delcotimes{
+		background-image:  url(/files/fullsize/a29663d7cd6a72bd50c85118bd8b0f0d.jpg);
+		background-position: center center;
+	}
 
-#robcross{
-	background:   linear-gradient(
-	rgba(0, 0, 0, 0.7), 
-	rgba(0, 0, 0, 0.7)
-	), url(/files/fullsize/9363b806296723780296e0d746c3fe12.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#robcross{
+		background-image:  url(/files/fullsize/9363b806296723780296e0d746c3fe12.jpg);
+		background-position: center center;
+	}
 
-#courtneysmith{
-	background:   linear-gradient(
-	rgba(0, 0, 0, 0.7), 
-	rgba(0, 0, 0, 0.7)
-	), url(/files/fullsize/491af50d4c031fde6cb9c0528f3594fb.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#courtneysmith{
+		background-image:  url(/files/fullsize/491af50d4c031fde6cb9c0528f3594fb.jpg);
+		background-position: center center;
+	}
 
-#phoenix{
-	background:   linear-gradient(
-	rgba(0, 0, 0, 0.7), 
-	rgba(0, 0, 0, 0.7)
-	), url(/files/fullsize/1653746fb11685df22b980e5d563f3eb.jpg) no-repeat center center;
-	background-size: 100% auto;
-}
+	#phoenix{
+		background-image:  url(/files/fullsize/1653746fb11685df22b980e5d563f3eb.jpg);
+		background-position: center center;
+	}
 }
