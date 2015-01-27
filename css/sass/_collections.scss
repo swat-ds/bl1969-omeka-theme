@@ -58,7 +58,7 @@ $collections-text-color: rgba(200,200,200,.4);
 	}   
 
 	div{
-		@include background-image(linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)));
+		@include background(linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)));
 		background-repeat: no-repeat;
 		background-size: 100% auto;
 	}
