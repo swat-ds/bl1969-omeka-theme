@@ -6,7 +6,7 @@
 * 
 */
 
-$collections-text-color: rgba(200,200,200,.4);
+$collections-text-color: rgba(225,225,225,.6);
 
 #collections-page {
 	width: 97%;
@@ -21,11 +21,12 @@ $collections-text-color: rgba(200,200,200,.4);
 	overflow: hidden;
 	margin: .5%;
 	cursor: pointer;
+        vertical-align
 	}
 
 	h4{
 	    color: $collections-text-color;
-	font-size: 16pt;
+	font-size: $base-font-size;
 	padding-top: 35px;
 	text-align: center;
 	}
@@ -36,15 +37,14 @@ $collections-text-color: rgba(200,200,200,.4);
 	padding-top: 34px;
 	margin-bottom: -68px;
 	font-variant: small-caps;
-	font-size: 11pt;
+	font-size: .6 * $base-font-size;
 	}
 
 	p{
 	    color: $collections-text-color;
-	display: none;
-	text-align: center;
-	padding-top: 35px;
-	color: white;
+	    display: none;
+	    text-align: center;
+	    padding-top: 35px;
 	    font-size: .8 * $base-font-size;
 	    line-height: .8 * $base-line-height;
 	}
@@ -67,7 +67,7 @@ $collections-text-color: rgba(200,200,200,.4);
 	}
 
 	#blackswarthmore{
-		background-image: url(/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg);
+		@include background(image-url("/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg"));
 		background-position: center center;
 	}
 
