@@ -76,8 +76,12 @@ var thumbsJSON = [
 	"file": "ee9691ea5e1ba0854c8d4b52c7fa562a.jpg"
 },
 { 
+	"name": "Frisby",
+	"file": "2d047eb604de79269b346cd4149812ef.jpg"
+},
+{ 
 	"name": "Sisters",
-	"file": "71080a4329ad6ee0de323c7491a97f28.jpg"
+	"file": "d2b46341613f75639ec430950f6a467c.jpg"
 },
 { 
 	"name": "Piker",
