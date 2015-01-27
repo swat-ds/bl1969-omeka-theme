@@ -116,37 +116,37 @@ $gradient-bottom: rgba(0,0,0,0);
 	}
 
 	#interviews{
-		background-image:  url(/files/fullsize/e0155c1b57f92c6468f30ec1d8bba2eb.jpg"),
+		@include background( image-url("/files/fullsize/e0155c1b57f92c6468f30ec1d8bba2eb.jpg"),
 		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#swarthmorean{
-		background-image:  url(/files/fullsize/7897a6cea33f74a323828b04adf52559.jpg"),
+		@include background( image-url("/files/fullsize/7897a6cea33f74a323828b04adf52559.jpg"),
 		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#delcotimes{
-		background-image:  url(/files/fullsize/a29663d7cd6a72bd50c85118bd8b0f0d.jpg"),
+		@include background( image-url("/files/fullsize/a29663d7cd6a72bd50c85118bd8b0f0d.jpg"),
 		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#robcross{
-		background-image:  url(/files/fullsize/9363b806296723780296e0d746c3fe12.jpg"),
+		@include background( image-url("/files/fullsize/9363b806296723780296e0d746c3fe12.jpg"),
 		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#courtneysmith{
-		background-image:  url(/files/fullsize/491af50d4c031fde6cb9c0528f3594fb.jpg"),
+		@include background( image-url("/files/fullsize/491af50d4c031fde6cb9c0528f3594fb.jpg"),
 		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
 
 	#phoenix{
-		background-image:  url(/files/fullsize/1653746fb11685df22b980e5d563f3eb.jpg"),
+		@include background( image-url("/files/fullsize/1653746fb11685df22b980e5d563f3eb.jpg"),
 		linear-gradient(to bottom, $gradient-top, $gradient-bottom));
 		background-position: center center;
 	}
