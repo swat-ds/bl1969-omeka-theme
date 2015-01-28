@@ -58,7 +58,8 @@ div#footer-content p {
 
 div#sort-links{
     font-family: $font-secondary-header;
-    font-size: $base-font-size;
+    font-size: .8 * $base-font-size;
+    line-height: .8 * $base-font-size;
 }
 
 div#collections-browse-metadata{
@@ -77,6 +78,69 @@ p.simplepage-text,
 }
 
 p.simplepage-text { padding: 0 1em; }
+h1 span.exhibit-page { 
+
+    font-family: $font-secondary-header;
+    padding-left: .5em;
+}
+
+/* * * * Items Browse * * * */
+
+div#items-container{
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.browse div.item{
+    display: inline-block;
+    width: 30%;
+    min-width: 300px;
+    float: left;
+    clear: none;
+    border-bottom: 1px solid #ddd;
+    padding: 1em;
+    height: 490px;
+    .item-img{
+        margin: 0 0 10px 0 !important;
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .item-meta .tags {
+        font-family: $font-secondary-header;
+        font-size: .8 * $base-font-size;
+        line-height: .8 * $base-font-size;
+    }
+    h3 {
+        text-align: center;
+    }
+}
+
+ul.pagination{
+    margin-bottom: 0; 
+    li {
+        font-size: .8 * $base-font-size;
+        line-height: .8 * $base-font-size;
+        font-family: $font-secondary-header;
+        border-style: none;
+        border-right: 1px solid #ddd !important;
+    }
+}
+
+.browse div.item:hover{
+    background-color: lighten($color-primary, 25%);
+    h3 a:link{
+        color: $color-contrast;
+    }
+}
+
+.browse-nav {
+
+    border: 1px solid #ddd;
+    height: 40px;
+    padding-right: 1em;
+}
 
 /* * * * Exhibits Page * * * */
 
@@ -96,6 +160,7 @@ p.simplepage-text { padding: 0 1em; }
             color:#000;
             font-family: $font-primary-header;
             font-size: 2 * $base-font-size;
+            line-height: 2 * $base-line-height;
             text-transform: uppercase;
         }
         li:nth-child(3){ display: none; }
@@ -130,31 +195,51 @@ div.element-text {
 
 div#docsviewer h2,
 div#docsviewer_viewer h2,
-div#moving-image-item-type-metadata-player { display: none !important; }
+div.element#moving-image-item-type-metadata-player { display: none !important; }
 
-docsviewer_viewer ifram{
+docsviewer_viewer iframe{
     @media screen and (min-width: 768px){
         width: 100% !important;
     }
 }
 
 div.audio-interview {
-    padding: 1em 1em 2em 1em;
+    padding: 1em;
     margin-bottom: 1em;
     border: 1px solid #ddd;
-    width: 430px;
+    width: 440px;
+    height: 460px;
     @include border-radius(10px);
-    div.image-jpeg:first-child{
+    div.image-jpeg {
         height: 400px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
         overflow: hidden;
-        img { width: 400px; }
-    } 
+    }
+    div.image-jpeg a img{
+            width: 400px !important; 
+    }
 }
 
-/* * * * Exhibits * * * */
+/* * * * Black Life Exhibit * * * */
 
-div.exhibit-image a img {
-    width: 500px;
+div.exhibit-description div#black-life{
+
+    padding: 0 1em;
+
+    .exhibit-image{
+        display: inline-block;
+        float: left;
+        width: 200px;
+    }
+    .exhibit-image:nth-child(1),
+    .exhibit-image:nth-child(2){
+        margin-right: 1em;
+    }
+    p:nth-child(4){
+        font-size: .8 * $base-font-size;
+    }
 }
 
 /* * * * Student Papers Exhibit * * * */
@@ -168,20 +253,24 @@ div.exhibit-image a img {
         display: inline-block;
         padding: 10px;
         width: 50%;
-        min-width: 310px;
+        min-width: 300px;
         max-width: 500px;
-        height: 375px; 
+        height: 390px; 
         @media screen and (max-width: 975px){
             height: 500px;
         }
         p {
-            font-size: $base-font-size;
-            line-height: $base-line-height;
+            font-size: .8 * $base-font-size;
+            line-height: .8 * $base-line-height;
         } 
+        h2{ line-height: 1.2 * $base-line-height;}
     }
    div.narrative-heading:hover{
-        background-color: #ddd;
-    } 
+        background-color: lighten($color-primary, 25%);
+        h2 a, h3 a{ 
+            color: $color-contrast;
+        }
+    }
 }
 
 /* * * * Soundtrack Exhibit * * * */
@@ -190,6 +279,9 @@ div#soundtrack-exhibit-player {
     margin-left: auto;
     margin-right: auto;
     width: 70%; 
+    p {
+        font-size: .8 * $base-font-size;
+    }
 }
 
 
@@ -229,7 +321,7 @@ div#interviews-gallery{
 
 div#enrollment-visualization svg {
 
-    font-family: 12px sans-serif;
+    font: 12px sans-serif;
 
     .axis path,
     .axis line {
@@ -249,6 +341,12 @@ div#enrollment-visualization svg {
       stroke: none;
       fill: #b2cce1;
     }
+}
+
+#enrollment-container em {
+    display: block;
+    font-size: .8 * $base-font-size;
+    margin: 0 1em;
 }
 
 /* * * * Exhibits List Page * * * */
@@ -272,7 +370,12 @@ div#exhibits-container {
         a img.thumb{ width: 200px; height: 200px; }
         div { vertical-align: top; }
     }
-    div.exhibit-preview:hover { background: #ddd; }	
+    div.exhibit-preview:hover {
+        background: lighten($color-primary, 25%); 
+        a h3{
+            color: $color-contrast;
+        }	
+    } 
 }
 
 

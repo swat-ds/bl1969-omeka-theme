@@ -10,7 +10,7 @@ if(isset($_GET['collection'])){
     echo "<h1>" . $pageTitle . "</h1>";
     $elements_array = array('Description', 'Source');
     foreach ($elements_array as $element) {
-        $element_text = metadata($current_collection, array('Dublin Core', $element));
+        $element_text = __(metadata($current_collection, array('Dublin Core', $element)));
         if($element_text){
             $out = "<h3>" . $element . "</h3>";
             $out .= "<h4>" . $element_text . "</h4>";
@@ -18,18 +18,20 @@ if(isset($_GET['collection'])){
         }   
     }
     echo "</div>";
-} elseif (isset($_GET['tags'])){
+} elseif (isset($_GET['tags']) || isset($_GET['tag'])){
 
-    $pageTitle = __($_GET['tags']);
+    $pageTitle = (isset($_GET['tags'])) ? __($_GET['tags'])
+        : __($_GET['tag']);
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     echo "<h1>tag: " . $pageTitle . "</h1>";    
 }
 ?>
 
 <h3><?php echo __('(%s total items)', $total_results); ?></h3>
-<?php echo pagination_links(); ?>
+<div class="browse-nav">
 
 <?php if ($total_results > 0): ?>
+<?php echo pagination_links(); ?>
 
 <?php
 $sortLinks[__('Title')] = 'Dublin Core,Title';
@@ -38,9 +40,10 @@ $sortLinks[__('Date')] = 'Dublin Core,Date';
 <div id="sort-links">
     <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
 </div>
-
+</div>
 <?php endif; ?>
 
+<div id="items-container">
 <?php foreach (loop('items') as $item): ?>
 <div class="item hentry">
     <h3><strong><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>75)), array('class'=>'permalink')); ?></strong></h3>
@@ -68,7 +71,7 @@ $sortLinks[__('Date')] = 'Dublin Core,Date';
     </div><!-- end class="item-meta" -->
 </div><!-- end class="item hentry" -->
 <?php endforeach; ?>
-
+</div>
 <?php echo pagination_links(); ?>
 
 <div id="outputs">

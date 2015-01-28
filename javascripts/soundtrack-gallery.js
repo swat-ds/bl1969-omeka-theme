@@ -39,7 +39,7 @@ jQuery(function(){
                 }
             }
             description += "&nbsp;&nbsp;<a href='/items/show/" + id;
-            description += "'>More Info</a>";
+            description += "'><em>More Info</em></a>";
             jQuery('div#soundtrack-exhibit-player')
                 .html(playerHTML)
                 .append("<p>" + description);

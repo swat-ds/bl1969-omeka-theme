@@ -4,8 +4,7 @@ var thumbsJSON = [
 	"file": "8816ff62b6f59f53558ffed89b5c3e6b.jpg"
 },
 { 
-	"name": "Ava Harris (Stanley)",
-	"file": "42b6040e9437aed68edcb8179d306270.jpg"
+	"name": "Ava Harris (Stanley)"
 },
 { 
 	"name": "Warren",
@@ -48,8 +47,7 @@ var thumbsJSON = [
 	"file": "9f3332c096da7f90806c24eae99c5b0c.jpg"
 },
 { 
-	"name": "Men",
-	"file": "b932c626bcbe663fd66bb06f816dcc33.jpg"
+	"name": "Men"
 },
 { 
 	"name": "Fields",
@@ -68,24 +66,20 @@ var thumbsJSON = [
 	"file": "756c984ee7132b8faef1ecdee338ae1e.jpg"
 },
 { 
-	"name": "Woodson",
-	"file": "1fef19a36845e182945d5c9986bc89ec.jpg"
+	"name": "Woodson"
 },
 { 
 	"name": "Wood",
 	"file": "ee9691ea5e1ba0854c8d4b52c7fa562a.jpg"
 },
 { 
-	"name": "Frisby",
-	"file": "2d047eb604de79269b346cd4149812ef.jpg"
+	"name": "Frisby"
 },
 { 
-	"name": "Sisters",
-	"file": "d2b46341613f75639ec430950f6a467c.jpg"
+	"name": "Sisters"
 },
 { 
-	"name": "Piker",
-	"file": "ac9e77189fbc636b34ac694b1b9a7ddd.jpg"
+	"name": "Piker"
 },
 { 
 	"name": "Bradley",
