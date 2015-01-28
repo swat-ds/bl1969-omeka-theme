@@ -36,14 +36,20 @@ body{
         background-size: auto 100%;
 }       
 
+header{
+    padding-bottom: 1.5em;
+}
+
 div.exhibit p.tags { display: none; }
 
 #primary-nav{
     font-family: $font-secondary-header;
     font-size: .80 * $base-font-size;
     li.active a, li.active a{
-    color: darken($color-contrast,10%);
+        color: darken($color-contrast,10%);
     }
+    padding-bottom: 3px;
+    border-bottom: 5px solid lighten($color-primary, 20%);
 }
 
 p#simple-pages-breadcrumbs,
@@ -98,27 +104,35 @@ div#items-container{
     min-width: 300px;
     float: left;
     clear: none;
+    overflow: hidden;
     border-bottom: 1px solid #ddd;
     padding: 1em;
-    height: 490px;
+    height: 450px;
+    @media screen and (max-width:768px){
+        height: 490px;
+    }
     .item-img{
         margin: 0 0 10px 0 !important;
         display: block;
         width: 100% !important;
         text-align: center !important;
     }
-    .item-meta .tags {
+    .item-meta .tags,
+    .item-meta .item-type {
         font-family: $font-secondary-header;
         font-size: .8 * $base-font-size;
         line-height: .8 * $base-font-size;
     }
     h3 {
         text-align: center;
+        height: 65px;
     }
 }
 
 ul.pagination{
     margin-bottom: 0; 
+    padding-bottom: 1em;
+    clear: both;
     li {
         font-size: .8 * $base-font-size;
         line-height: .8 * $base-font-size;
@@ -127,6 +141,8 @@ ul.pagination{
         border-right: 1px solid #ddd !important;
     }
 }
+
+div.browse-nav ul.pagination { padding-bottom: 0; }
 
 .browse div.item:hover{
     background-color: lighten($color-primary, 25%);
@@ -228,7 +244,7 @@ div.exhibit-description div#black-life{
 
     padding: 0 1em;
 
-    .exhibit-image{
+    div.exhibit-image{
         display: inline-block;
         float: left;
         width: 200px;
@@ -459,8 +475,8 @@ form#advanced-search-form {
     padding: 1em;
     border: 1px solid #ddd;
     @include border-radius(10px);
-    div:nth-child(3), 
-    div:nth-child(n+6)
+    div.field:nth-child(3), 
+    div.field:nth-child(n+6)
     { display: none; }
     div.field label, div.label { 
         font-size: $base-font-size;

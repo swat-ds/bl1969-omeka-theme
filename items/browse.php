@@ -1,7 +1,9 @@
 <?php
-
-if(isset($_GET['collection'])){
-
+if(isset($_GET['search'])){
+    $pageTitle = "Search:" . __($_GET['search']);
+    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
+    echo "<h1>" . $pageTitle . "</h1>";
+}elseif(isset($_GET['collection'])){
     $current_collection = get_collection_for_item($items[0]);
     $pageTitle = __(metadata($current_collection, array('Dublin Core','Title')));
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
@@ -46,7 +48,7 @@ $sortLinks[__('Date')] = 'Dublin Core,Date';
 <div id="items-container">
 <?php foreach (loop('items') as $item): ?>
 <div class="item hentry">
-    <h3><strong><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>75)), array('class'=>'permalink')); ?></strong></h3>
+    <h3><strong><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title'), array('snippet'=>70)), array('class'=>'permalink')); ?></strong></h3>
     <div class="item-meta">
     <?php if (metadata('item', 'has thumbnail')): ?>
     <div class="item-img">
@@ -54,9 +56,15 @@ $sortLinks[__('Date')] = 'Dublin Core,Date';
     </div>
     <?php endif; ?>
 
-    <?php if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
+<?php /*  if ($description = metadata('item', array('Dublin Core', 'Description'), array('snippet'=>250))): ?>
     <div class="item-description">
         <?php echo $description; ?>
+    </div>
+    <?php endif;  */ ?> 
+
+    <?php if (metadata('item', 'item_type_name')): ?>
+    <div class="item-type"><p><strong><?php echo __('Item type'); ?>:</strong>
+        <?php echo __(metadata('item', 'item_type_name')); ?></p>
     </div>
     <?php endif; ?>
 
