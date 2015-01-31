@@ -148,7 +148,7 @@ div.browse-nav ul.pagination { padding-bottom: 0; }
 
 .browse div.item:hover{
     background-color: $color-hover-background;
-    h3 a:link{
+    h3 a:link, p{
         color: $color-hover-foreground;
     }
 }
@@ -285,7 +285,7 @@ div.exhibit-description div#black-life{
     }
    div.narrative-heading:hover{
         background-color: $color-hover-background;
-        h2 a, h3 a{ 
+        h2 a, h3 a, p{ 
             color: $color-hover-foreground;
         }
     }
@@ -390,7 +390,7 @@ div#exhibits-container {
     }
     div.exhibit-preview:hover {
         background-color: $color-hover-background; 
-        a h3{
+        a h3, p{
             color: $color-hover-foreground;
         }	
     } 
