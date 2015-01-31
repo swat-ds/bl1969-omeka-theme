@@ -10,6 +10,8 @@ body{
 	font-family: $font-secondary-family;
 }
 
+a { text-decoration: none; }
+
 #{headings(2,6)}{ 
 	font-family: $font-secondary-header;
 }
@@ -145,9 +147,9 @@ ul.pagination{
 div.browse-nav ul.pagination { padding-bottom: 0; }
 
 .browse div.item:hover{
-    background-color: lighten($color-primary, 25%);
+    background-color: $color-hover-background;
     h3 a:link{
-        color: $color-contrast;
+        color: $color-hover-foreground;
     }
 }
 
@@ -282,9 +284,9 @@ div.exhibit-description div#black-life{
         h2{ line-height: 1.2 * $base-line-height;}
     }
    div.narrative-heading:hover{
-        background-color: lighten($color-primary, 25%);
+        background-color: $color-hover-background;
         h2 a, h3 a{ 
-            color: $color-contrast;
+            color: $color-hover-foreground;
         }
     }
 }
@@ -387,9 +389,9 @@ div#exhibits-container {
         div { vertical-align: top; }
     }
     div.exhibit-preview:hover {
-        background: lighten($color-primary, 25%); 
+        background-color: $color-hover-background; 
         a h3{
-            color: $color-contrast;
+            color: $color-hover-foreground;
         }	
     } 
 }

@@ -20,7 +20,6 @@ jQuery(function(){
             i++;
         })
         .hover(function(e){
-            console.log(e.currentTarget);
            jQuery(e.currentTarget).find('img:nth-child(2)')
             .toggle();
         });

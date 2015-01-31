@@ -7,7 +7,6 @@ jQuery(function(){
         .each(function(){
             var currItem = jQuery(this).find('a');
             currItem.find('img').attr('title','title');
-            console.log(currItem);
             var itemID = currItem.attr('href');
             itemID = itemID.substr(itemID.lastIndexOf('/') + 1);
             currItem.attr('data-item-id',itemID);
@@ -52,7 +51,6 @@ jQuery(function(){
         .on('click', function(d){
             var itemID = jQuery(d.currentTarget)
                             .find('a').attr('data-item-id');
-            console.log(itemID);
             getPlayerFromID(itemID);
 
         });

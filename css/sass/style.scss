@@ -23,6 +23,9 @@ $color-primary: #292b39;
 $color-contrast: #ee5140;
 $color-dark: #040404;
 
+$color-hover-background: lighten($color-primary, 20%);
+$color-hover-foreground: lighten($color-contrast, 20%);
+
 @import "screen";
 @import "blacklib";
 @import "collections";
