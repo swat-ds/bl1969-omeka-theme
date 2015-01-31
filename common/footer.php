@@ -59,7 +59,7 @@
   ga('create', 'UA-58250963-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script src="http://54.210.13.122:35729/livereload.js"></script>
+<!-- <script src="http://54.210.13.122:35729/livereload.js"></script> -->
 </body>
 
 </html>
