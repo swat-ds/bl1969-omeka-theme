@@ -2284,17 +2284,17 @@ a {
   text-decoration: none;
 }
 
-/* line 15, sass/_blacklib.scss */
+/* line 17, sass/_blacklib.scss */
 h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro";
 }
 
-/* line 19, sass/_blacklib.scss */
+/* line 21, sass/_blacklib.scss */
 h1 {
   font-family: "Bevan";
 }
 
-/* line 23, sass/_blacklib.scss */
+/* line 25, sass/_blacklib.scss */
 #site-title a {
   font-family: "Special Elite";
   font-size: 45px;
@@ -2307,56 +2307,74 @@ h1 {
   background-size: auto 100%;
 }
 @media screen and (max-width: 960px) {
-  /* line 23, sass/_blacklib.scss */
+  /* line 25, sass/_blacklib.scss */
   #site-title a {
     width: 400px;
     height: 100%;
     padding-top: 0px;
   }
 }
+@media screen and (max-width: 768px) {
+  /* line 25, sass/_blacklib.scss */
+  #site-title a {
+    width: 100%;
+    height: 175px;
+    padding: 10px;
+    font-size: 22.5px;
+    line-height: 30px;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMyMzIzMiIgc3RvcC1vcGFjaXR5PSIwLjgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzMjMyMzIiIHN0b3Atb3BhY2l0eT0iMC4yIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g'), url(/themes/berlin_bl1969mod/css/logo_small.jpg);
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(50, 50, 50, 0.8)), color-stop(100%, rgba(50, 50, 50, 0.2))), url(/themes/berlin_bl1969mod/css/logo_small.jpg);
+    background: -moz-linear-gradient(top, rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.2)), url(/themes/berlin_bl1969mod/css/logo_small.jpg);
+    background: -webkit-linear-gradient(top, rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.2)), url(/themes/berlin_bl1969mod/css/logo_small.jpg);
+    background: linear-gradient(to bottom center, rgba(50, 50, 50, 0.8), rgba(50, 50, 50, 0.2)), url(/themes/berlin_bl1969mod/css/logo_small.jpg);
+    text-shadow: #5e6383 1px 1px 0;
+    color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+  }
+}
 
-/* line 41, sass/_blacklib.scss */
+/* line 58, sass/_blacklib.scss */
 header {
   padding-bottom: 1.5em;
 }
 
-/* line 45, sass/_blacklib.scss */
+/* line 62, sass/_blacklib.scss */
 div.exhibit p.tags {
   display: none;
 }
 
-/* line 47, sass/_blacklib.scss */
+/* line 64, sass/_blacklib.scss */
 #primary-nav {
   font-family: "Source Sans Pro";
   font-size: 14.4px;
   padding-bottom: 3px;
   border-bottom: 5px solid #545874;
 }
-/* line 50, sass/_blacklib.scss */
+/* line 67, sass/_blacklib.scss */
 #primary-nav li.active a, #primary-nav li.active a {
   color: #e62915;
 }
 
-/* line 57, sass/_blacklib.scss */
+/* line 74, sass/_blacklib.scss */
 p#simple-pages-breadcrumbs,
 div#footer-content {
   font-family: "Source Sans Pro";
   font-size: 14.4px;
 }
 
-/* line 63, sass/_blacklib.scss */
+/* line 80, sass/_blacklib.scss */
 div#footer-content p {
   display: none;
 }
 
-/* line 67, sass/_blacklib.scss */
+/* line 84, sass/_blacklib.scss */
 div#sort-links {
   font-family: "Source Sans Pro";
   font-size: 14.4px;
   line-height: 14.4px;
 }
 
-/* line 78, sass/_blacklib.scss */
+/* line 95, sass/_blacklib.scss */
 .element-text,
 .exhibit-description p,
 p.simplepage-text,
@@ -2366,26 +2384,26 @@ p.simplepage-text,
   line-height: 24px;
 }
 
-/* line 88, sass/_blacklib.scss */
+/* line 105, sass/_blacklib.scss */
 p.simplepage-text {
   padding: 0 1em;
 }
 
-/* line 89, sass/_blacklib.scss */
+/* line 106, sass/_blacklib.scss */
 h1 span.exhibit-page {
   font-family: "Source Sans Pro";
   padding-left: .5em;
 }
 
 /* * * * Items Browse * * * */
-/* line 97, sass/_blacklib.scss */
+/* line 114, sass/_blacklib.scss */
 div#items-container {
   width: 97%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 103, sass/_blacklib.scss */
+/* line 120, sass/_blacklib.scss */
 .browse div.item {
   display: inline-block;
   width: 30%;
@@ -2398,38 +2416,38 @@ div#items-container {
   height: 450px;
 }
 @media screen and (max-width: 768px) {
-  /* line 103, sass/_blacklib.scss */
+  /* line 120, sass/_blacklib.scss */
   .browse div.item {
     height: 490px;
   }
 }
-/* line 116, sass/_blacklib.scss */
+/* line 133, sass/_blacklib.scss */
 .browse div.item .item-img {
   margin: 0 0 10px 0 !important;
   display: block;
   width: 100% !important;
   text-align: center !important;
 }
-/* line 122, sass/_blacklib.scss */
+/* line 139, sass/_blacklib.scss */
 .browse div.item .item-meta .tags,
 .browse div.item .item-meta .item-type {
   font-family: "Source Sans Pro";
   font-size: 14.4px;
   line-height: 14.4px;
 }
-/* line 128, sass/_blacklib.scss */
+/* line 145, sass/_blacklib.scss */
 .browse div.item h3 {
   text-align: center;
   height: 65px;
 }
 
-/* line 134, sass/_blacklib.scss */
+/* line 151, sass/_blacklib.scss */
 ul.pagination {
   margin-bottom: 0;
   padding-bottom: 1em;
   clear: both;
 }
-/* line 138, sass/_blacklib.scss */
+/* line 155, sass/_blacklib.scss */
 ul.pagination li {
   font-size: 14.4px;
   line-height: 14.4px;
@@ -2438,21 +2456,21 @@ ul.pagination li {
   border-right: 1px solid #ddd !important;
 }
 
-/* line 147, sass/_blacklib.scss */
+/* line 164, sass/_blacklib.scss */
 div.browse-nav ul.pagination {
   padding-bottom: 0;
 }
 
-/* line 149, sass/_blacklib.scss */
+/* line 166, sass/_blacklib.scss */
 .browse div.item:hover {
   background-color: #494d65;
 }
-/* line 151, sass/_blacklib.scss */
+/* line 168, sass/_blacklib.scss */
 .browse div.item:hover h3 a:link, .browse div.item:hover p {
   color: #c1c4d3;
 }
 
-/* line 156, sass/_blacklib.scss */
+/* line 173, sass/_blacklib.scss */
 .browse-nav {
   border: 1px solid #ddd;
   height: 40px;
@@ -2460,25 +2478,25 @@ div.browse-nav ul.pagination {
 }
 
 /* * * * Exhibits Page * * * */
-/* line 167, sass/_blacklib.scss */
+/* line 184, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav {
   list-style-type: decimal;
 }
-/* line 170, sass/_blacklib.scss */
+/* line 187, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li {
   padding-bottom: 0;
 }
-/* line 171, sass/_blacklib.scss */
+/* line 188, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li a {
   background: none;
   color: #040404;
   font-size: 18px;
 }
-/* line 176, sass/_blacklib.scss */
+/* line 193, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li.current a {
   color: #ee5140;
 }
-/* line 177, sass/_blacklib.scss */
+/* line 194, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav a.exhibit-title {
   color: #000;
   font-family: "Bevan";
@@ -2486,50 +2504,50 @@ div.browse-nav ul.pagination {
   line-height: 48px;
   text-transform: uppercase;
 }
-/* line 184, sass/_blacklib.scss */
+/* line 201, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-page-nav#secondary-nav li:nth-child(3) {
   display: none;
 }
-/* line 188, sass/_blacklib.scss */
+/* line 205, sass/_blacklib.scss */
 .exhibits.show #content h1 {
   font-family: "Droid Serif";
 }
-/* line 190, sass/_blacklib.scss */
+/* line 207, sass/_blacklib.scss */
 .exhibits.show ul.exhibit-child-nav {
   display: none;
 }
-/* line 192, sass/_blacklib.scss */
+/* line 209, sass/_blacklib.scss */
 .exhibits.show #exhibit-page-navigation {
   font-size: 18px;
 }
-/* line 195, sass/_blacklib.scss */
+/* line 212, sass/_blacklib.scss */
 .exhibits.show #exhibit-page-navigation .current-page, .exhibits.show #exhibit-page-navigation #exhibit-nav-up {
   display: none;
 }
 
 /* * * * Show Image * * * */
-/* line 201, sass/_blacklib.scss */
+/* line 218, sass/_blacklib.scss */
 #image-preview {
   max-width: 500px;
 }
 
-/* line 202, sass/_blacklib.scss */
+/* line 219, sass/_blacklib.scss */
 #dublin-core-title {
   display: none;
 }
 
-/* line 203, sass/_blacklib.scss */
+/* line 220, sass/_blacklib.scss */
 div.element-text {
   padding: 1.25em 0 0 1em;
 }
 
-/* line 208, sass/_blacklib.scss */
+/* line 225, sass/_blacklib.scss */
 #item-metadata .element-set div div, #item-metadata .element-set div h3, #item-metadata .element-set h3, #item-metadata .element-set div, div.element div div, div.element div h3, div.element h3, div.element div {
   display: inline-block !important;
   float: left !important;
 }
 
-/* line 214, sass/_blacklib.scss */
+/* line 231, sass/_blacklib.scss */
 div#docsviewer h2,
 div#docsviewer_viewer h2,
 div.element#moving-image-item-type-metadata-player {
@@ -2537,13 +2555,13 @@ div.element#moving-image-item-type-metadata-player {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 218, sass/_blacklib.scss */
+  /* line 235, sass/_blacklib.scss */
   docsviewer_viewer iframe {
     width: 100% !important;
   }
 }
 
-/* line 224, sass/_blacklib.scss */
+/* line 241, sass/_blacklib.scss */
 div.audio-interview {
   padding: 1em;
   margin-bottom: 1em;
@@ -2554,7 +2572,7 @@ div.audio-interview {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 231, sass/_blacklib.scss */
+/* line 248, sass/_blacklib.scss */
 div.audio-interview div.image-jpeg {
   height: 400px;
   width: 400px;
@@ -2562,38 +2580,38 @@ div.audio-interview div.image-jpeg {
   margin-right: auto;
   overflow: hidden;
 }
-/* line 238, sass/_blacklib.scss */
+/* line 255, sass/_blacklib.scss */
 div.audio-interview div.image-jpeg a img {
   width: 400px !important;
 }
 
 /* * * * Black Life Exhibit * * * */
-/* line 245, sass/_blacklib.scss */
+/* line 262, sass/_blacklib.scss */
 div.exhibit-description div#black-life {
   padding: 0 1em;
 }
-/* line 249, sass/_blacklib.scss */
+/* line 266, sass/_blacklib.scss */
 div.exhibit-description div#black-life div.exhibit-image {
   display: inline-block;
   float: left;
   width: 200px;
 }
-/* line 254, sass/_blacklib.scss */
+/* line 271, sass/_blacklib.scss */
 div.exhibit-description div#black-life .exhibit-image:nth-child(1),
 div.exhibit-description div#black-life .exhibit-image:nth-child(2) {
   margin-right: 1em;
 }
-/* line 258, sass/_blacklib.scss */
+/* line 275, sass/_blacklib.scss */
 div.exhibit-description div#black-life p:nth-child(4) {
   font-size: 14.4px;
 }
 
 /* * * * Student Papers Exhibit * * * */
-/* line 265, sass/_blacklib.scss */
+/* line 282, sass/_blacklib.scss */
 #narratives {
   padding: 0 1em;
 }
-/* line 269, sass/_blacklib.scss */
+/* line 286, sass/_blacklib.scss */
 #narratives div.narrative-heading {
   float: left;
   display: inline-block;
@@ -2604,73 +2622,89 @@ div.exhibit-description div#black-life p:nth-child(4) {
   height: 390px;
 }
 @media screen and (max-width: 975px) {
-  /* line 269, sass/_blacklib.scss */
+  /* line 286, sass/_blacklib.scss */
   #narratives div.narrative-heading {
     height: 550px;
   }
 }
-/* line 280, sass/_blacklib.scss */
+/* line 297, sass/_blacklib.scss */
 #narratives div.narrative-heading p {
   font-size: 14.4px;
   line-height: 19.2px;
 }
-/* line 284, sass/_blacklib.scss */
+/* line 301, sass/_blacklib.scss */
 #narratives div.narrative-heading h2 {
   line-height: 28.8px;
 }
-/* line 286, sass/_blacklib.scss */
+/* line 303, sass/_blacklib.scss */
 #narratives div.narrative-heading:hover {
   background-color: #494d65;
 }
-/* line 288, sass/_blacklib.scss */
+/* line 305, sass/_blacklib.scss */
 #narratives div.narrative-heading:hover h2 a, #narratives div.narrative-heading:hover h3 a, #narratives div.narrative-heading:hover p {
   color: #c1c4d3;
 }
 
+/* * * * Neatline Exhibit * * * */
+/* line 315, sass/_blacklib.scss */
+div#neatline a {
+  color: #ee5140;
+}
+/* line 316, sass/_blacklib.scss */
+div#neatline a:hover {
+  color: #5e6383;
+}
+
 /* * * * Soundtrack Exhibit * * * */
-/* line 296, sass/_blacklib.scss */
+/* line 322, sass/_blacklib.scss */
 div#soundtrack-exhibit-player {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
 }
-/* line 300, sass/_blacklib.scss */
+/* line 326, sass/_blacklib.scss */
 div#soundtrack-exhibit-player p {
   font-size: 14.4px;
 }
 
+/* line 332, sass/_blacklib.scss */
+div#soundtrack-playlist a.image {
+  height: 150px;
+  width: 150px;
+}
+
 /* * * * Interviews Gallery * * * */
-/* line 308, sass/_blacklib.scss */
+/* line 340, sass/_blacklib.scss */
 div#interviews-gallery {
   width: 98%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 313, sass/_blacklib.scss */
+/* line 345, sass/_blacklib.scss */
 div#interviews-gallery .record {
   display: inline-block;
   height: 150px;
   width: 150px;
   overflow: hidden;
 }
-/* line 320, sass/_blacklib.scss */
+/* line 352, sass/_blacklib.scss */
 div#interviews-gallery .item img {
   width: 150px;
   height: 150px;
   z-index: 1;
 }
-/* line 321, sass/_blacklib.scss */
+/* line 353, sass/_blacklib.scss */
 div#interviews-gallery .item img:nth-child(2) {
   display: none;
   position: relative;
   top: -150px;
   z-index: 1;
 }
-/* line 327, sass/_blacklib.scss */
+/* line 359, sass/_blacklib.scss */
 div#interviews-gallery .item .item-description, div#interviews-gallery .item h3:first-child {
   display: none;
 }
-/* line 328, sass/_blacklib.scss */
+/* line 360, sass/_blacklib.scss */
 div#interviews-gallery .item a h3 {
   position: relative;
   margin: 0 15px;
@@ -2680,34 +2714,34 @@ div#interviews-gallery .item a h3 {
 }
 
 /* * * * Enrollment Visualization * * * */
-/* line 340, sass/_blacklib.scss */
+/* line 372, sass/_blacklib.scss */
 div#enrollment-visualization svg {
   font: 12px sans-serif;
 }
-/* line 344, sass/_blacklib.scss */
+/* line 376, sass/_blacklib.scss */
 div#enrollment-visualization svg .axis path,
 div#enrollment-visualization svg .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
-/* line 350, sass/_blacklib.scss */
+/* line 382, sass/_blacklib.scss */
 div#enrollment-visualization svg .x.axis path {
   display: none;
 }
-/* line 353, sass/_blacklib.scss */
+/* line 385, sass/_blacklib.scss */
 div#enrollment-visualization svg .line {
   fill: none;
   stroke-width: 2.5px;
   stroke: #315a7d;
 }
-/* line 358, sass/_blacklib.scss */
+/* line 390, sass/_blacklib.scss */
 div#enrollment-visualization svg .area {
   stroke: none;
   fill: #b2cce1;
 }
 
-/* line 364, sass/_blacklib.scss */
+/* line 396, sass/_blacklib.scss */
 #enrollment-container em {
   display: block;
   font-size: 14.4px;
@@ -2715,13 +2749,13 @@ div#enrollment-visualization svg .area {
 }
 
 /* * * * Exhibits List Page * * * */
-/* line 372, sass/_blacklib.scss */
+/* line 404, sass/_blacklib.scss */
 div#exhibits-container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 376, sass/_blacklib.scss */
+/* line 408, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview {
   width: 45%;
   min-width: 310px;
@@ -2734,31 +2768,31 @@ div#exhibits-container div.exhibit-preview {
   line-height: 19.2px;
 }
 @media screen and (max-width: 960px) {
-  /* line 376, sass/_blacklib.scss */
+  /* line 408, sass/_blacklib.scss */
   div#exhibits-container div.exhibit-preview {
     height: 100%;
   }
 }
-/* line 388, sass/_blacklib.scss */
+/* line 420, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview a img.thumb {
   width: 200px;
   height: 200px;
 }
-/* line 389, sass/_blacklib.scss */
+/* line 421, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview div {
   vertical-align: top;
 }
-/* line 391, sass/_blacklib.scss */
+/* line 423, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview:hover {
   background-color: #494d65;
 }
-/* line 393, sass/_blacklib.scss */
+/* line 425, sass/_blacklib.scss */
 div#exhibits-container div.exhibit-preview:hover a h3, div#exhibits-container div.exhibit-preview:hover p {
   color: #c1c4d3;
 }
 
 /* * * * Main Page * * * */
-/* line 403, sass/_blacklib.scss */
+/* line 435, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div {
   position: relative;
   height: 375px;
@@ -2766,22 +2800,22 @@ div#exhibits-container div.exhibit-preview:hover a h3, div#exhibits-container di
   background-size: 100% auto !important;
   background-position: center center !important;
 }
-/* line 409, sass/_blacklib.scss */
+/* line 441, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div h2 {
   margin: 0;
   text-align: center;
   font-family: "Bevan";
   text-transform: uppercase;
 }
-/* line 415, sass/_blacklib.scss */
+/* line 447, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div h2:hover {
   color: #ee5140;
 }
-/* line 416, sass/_blacklib.scss */
+/* line 448, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div p {
   display: none;
 }
-/* line 417, sass/_blacklib.scss */
+/* line 449, sass/_blacklib.scss */
 .jcarousel#jcarousel-main a div div {
   position: absolute;
   bottom: 0;
@@ -2792,40 +2826,48 @@ div#exhibits-container div.exhibit-preview:hover a h3, div#exhibits-container di
   padding: 1em 2em;
   background-color: rgba(255, 255, 255, 0.75);
 }
+@media screen and (max-width: 768px) {
+  /* line 460, sass/_blacklib.scss */
+  .jcarousel#jcarousel-main a div div {
+    height: 50%;
+    margin-left: 0;
+    padding: 1em;
+  }
+}
 
-/* line 430, sass/_blacklib.scss */
+/* line 469, sass/_blacklib.scss */
 #main div#primary h1:nth-child(2),
 #main p#simple-pages-breadcrumbs {
   display: none;
 }
 
 /* * * * Tag Cloud * * * */
-/* line 436, sass/_blacklib.scss */
+/* line 475, sass/_blacklib.scss */
 .items.tags #content h1:nth-child(1),
 .items.tags .secondary-nav {
   display: none;
 }
-/* line 440, sass/_blacklib.scss */
+/* line 479, sass/_blacklib.scss */
 .items.tags #content h1:nth-child(1):after {
   content: 'Search Items by Tag';
   visibility: visible;
   display: block;
 }
 
-/* line 447, sass/_blacklib.scss */
+/* line 486, sass/_blacklib.scss */
 .hTagcloud {
   border: 1px solid #ddd;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 450, sass/_blacklib.scss */
+/* line 489, sass/_blacklib.scss */
 .hTagcloud ul li {
   margin: 17px 4px;
   display: inline-block;
   font-family: "Special Elite";
 }
-/* line 455, sass/_blacklib.scss */
+/* line 494, sass/_blacklib.scss */
 .hTagcloud a {
   color: rgba(225, 225, 225, 0.75);
   padding: 10px 5px;
@@ -2835,7 +2877,7 @@ div#exhibits-container div.exhibit-preview:hover a h3, div#exhibits-container di
   border-radius: 20px;
   opacity: .8;
 }
-/* line 464, sass/_blacklib.scss */
+/* line 503, sass/_blacklib.scss */
 .hTagcloud a:hover {
   background-color: #ec3c29;
   border: 2px solid #e62915;
@@ -2844,12 +2886,12 @@ div#exhibits-container div.exhibit-preview:hover a h3, div#exhibits-container di
 }
 
 /* * * * Advanced Search * * * */
-/* line 474, sass/_blacklib.scss */
+/* line 513, sass/_blacklib.scss */
 .items.advanced-search .secondary-nav {
   display: none;
 }
 
-/* line 475, sass/_blacklib.scss */
+/* line 514, sass/_blacklib.scss */
 form#advanced-search-form {
   max-width: 70%;
   padding: 1em;
@@ -2858,35 +2900,82 @@ form#advanced-search-form {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 480, sass/_blacklib.scss */
+/* line 519, sass/_blacklib.scss */
 form#advanced-search-form div.field:nth-child(3),
 form#advanced-search-form div.field:nth-child(n+6) {
   display: none;
 }
-/* line 483, sass/_blacklib.scss */
+/* line 522, sass/_blacklib.scss */
 form#advanced-search-form div.field label, form#advanced-search-form div.label {
   font-size: 18px;
   border-bottom: 1px solid #ddd;
 }
-/* line 487, sass/_blacklib.scss */
+/* line 526, sass/_blacklib.scss */
 form#advanced-search-form input, form#advanced-search-form select, form#advanced-search-form button {
   margin: 1em 1em 0 0;
 }
 
-/* * * * About Page * * * */
-/* line 492, sass/_blacklib.scss */
-#about div#about-header {
+/* * * * Simple Page * * * */
+/* line 531, sass/_blacklib.scss */
+.simplepage-header {
   height: 375px;
-  margin: 0 1em;
-  background-position: -250px -400px !important;
+  margin: 0;
   background-size: 125% auto !important;
   background-repeat: no-repeat !important;
 }
+
+/* line 540, sass/_blacklib.scss */
+.simplepage-text a {
+  color: #ee5140;
+}
+/* line 541, sass/_blacklib.scss */
+.simplepage-text a:hover {
+  border-bottom: 1px dotted #494d65;
+}
+
+/* line 545, sass/_blacklib.scss */
+#credits-header {
+  background-position: -75px  -150px !important;
+}
 @media screen and (max-width: 768px) {
-  /* line 492, sass/_blacklib.scss */
+  /* line 545, sass/_blacklib.scss */
+  #credits-header {
+    background-position: 0 0 !important;
+  }
+}
+
+/* line 553, sass/_blacklib.scss */
+.simplepage-list ul {
+  margin-left: -1em;
+  list-style-type: none;
+}
+
+/* line 558, sass/_blacklib.scss */
+#credits-logo {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* * * * About Page * * * */
+/* line 565, sass/_blacklib.scss */
+#about div#about-header {
+  border: 1px solid #ddd;
+  background-position: -250px -400px !important;
+}
+@media screen and (max-width: 768px) {
+  /* line 565, sass/_blacklib.scss */
   #about div#about-header {
     background-position: bottom right !important;
   }
+}
+
+/* line 573, sass/_blacklib.scss */
+span#email {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /*
