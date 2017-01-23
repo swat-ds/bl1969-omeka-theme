@@ -27,7 +27,7 @@ exhibitsJSON =
   {
     "title": "The 1969 Sit-In",
     "description": "Documents and articles relating to the January 1969 SASS occupation of the Admissions Office.",
-    "url": "/exhibits/show/1969-sitin",
+    "url": "/exhibits/show/1969-sit-in",
     "thumb": "fullsize/032b1784bb8cf6b5acf690d401529b41.jpg"
   },
   {
@@ -75,7 +75,7 @@ exhibitsJSON =
   {
     "title": "Mapping the 1969 Sit-in",
     "description": "An interactive map following the steps of the Black students involved in the Occupation of Parrish Hall in January 1969.",
-    "url": "/neatline/show/sit-in-neatline",
+    "url": "neatline/fullscreen/sit-in-map",
     "thumb": "square_thumbnails/sitin_thumb.png"
   }
 ]

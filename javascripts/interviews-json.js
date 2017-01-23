@@ -70,7 +70,7 @@ var thumbsJSON = [
 },
 { 
 	"name": "Wood",
-	"file": "ee9691ea5e1ba0854c8d4b52c7fa562a.jpg"
+	"file": "cbeb85cc629511fa506b2b2aa4966925.jpg"
 },
 { 
 	"name": "Frisby"
