@@ -9,6 +9,7 @@
 $collections-text-color: rgba(225,225,225,.9);
 $gradient-top: rgba(50,50,50,.9);
 $gradient-bottom: rgba(0,0,0,.6);
+$s3-prefix: "http://s3.amazonaws.com/sc-lib-ds-bl1969%2Ffullsize%2F";
 
 div#collections-page {
     
@@ -64,90 +65,90 @@ div#collections-page {
 
     #blackswarthmore{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-            image-url("/files/fullsize/10a5628ce7b687f4aa17b1e5ef724dd2.jpg"));
+            image-url($s3-prefix+"10a5628ce7b687f4aa17b1e5ef724dd2.jpg"));
         background-size: auto 100% !important;
     }
 
     #halcyon{
         background-size: 400px 400px;
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/8f841b2c30fd1e35f3d4b0861eefa5b8.jpg"));
+             image-url($s3-prefix+"8f841b2c30fd1e35f3d4b0861eefa5b8.jpg"));
     }
 
     #narratives{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/03c7e5cef9f2230083e17b403110f335.jpg"));
+             image-url($s3-prefix+"03c7e5cef9f2230083e17b403110f335.jpg"));
         background-position: 0px 38%;
     }
 
     #blackphilosophies{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/8dd5fc5d5a576b1f4e0ad09cd9e9e373.jpg"));
+             image-url($s3-prefix+"8dd5fc5d5a576b1f4e0ad09cd9e9e373.jpg"));
     }
 
     #mediafellows{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/c0a24bba8509defe8c0f4b17c12d4a2e.jpg"));
+             image-url($s3-prefix+"c0a24bba8509defe8c0f4b17c12d4a2e.jpg"));
     }
 
     #chesterhomes{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/ea7fdeedbb4e73477895abba21d6ba57.jpg"));
+             image-url($s3-prefix+"ea7fdeedbb4e73477895abba21d6ba57.jpg"));
         background-position: bottom right;
     }
 
     #fhlrefs{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/cec03e328f658884a1e20b68492f9090.jpg"));
+             image-url($s3-prefix+"cec03e328f658884a1e20b68492f9090.jpg"));
     }
 
     #bccrecords{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/c3149a8103ab6c6f51010a1561f2cf8d.jpg"));
+             image-url($s3-prefix+"c3149a8103ab6c6f51010a1561f2cf8d.jpg"));
     }
 
     #students{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/9f8399fd81eaa2726d0e7614e838559d.jpg"));
+             image-url("9f8399fd81eaa2726d0e7614e838559d.jpg"));
     }
 
     #interviews{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/e0155c1b57f92c6468f30ec1d8bba2eb.jpg"));
+             image-url($s3-prefix+"e0155c1b57f92c6468f30ec1d8bba2eb.jpg"));
     }
 
     #swarthmorean{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/7897a6cea33f74a323828b04adf52559.jpg"));
+             image-url($s3-prefix+"7897a6cea33f74a323828b04adf52559.jpg"));
     }
 
     #delcotimes{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/a29663d7cd6a72bd50c85118bd8b0f0d.jpg"));
+             image-url($s3-prefix+"a29663d7cd6a72bd50c85118bd8b0f0d.jpg"));
     }
 
     #robcross{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/9363b806296723780296e0d746c3fe12.jpg"));
+             image-url($s3-prefix+"9363b806296723780296e0d746c3fe12.jpg"));
     }
 
     #courtneysmith{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/491af50d4c031fde6cb9c0528f3594fb.jpg"));
+             image-url($s3-prefix+"491af50d4c031fde6cb9c0528f3594fb.jpg"));
     }
 
     #phoenix{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/1653746fb11685df22b980e5d563f3eb.jpg"));
+             image-url($s3-prefix+"1653746fb11685df22b980e5d563f3eb.jpg"));
     }
 
     #buchanan {
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/94740dd6e906a488fabb03c5f3f3fb62.jpg"));
+             image-url($s3-prefix+"94740dd6e906a488fabb03c5f3f3fb62.jpg"));
     }
     
     #franklin{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("/files/fullsize/0574e0070308b18ed9fec5ca5e57b777.jpg"));
+             image-url($s3-prefix+"0574e0070308b18ed9fec5ca5e57b777.jpg"));
     }
 }
