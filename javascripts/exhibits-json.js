@@ -28,7 +28,7 @@ exhibitsJSON =
     "title": "The 1969 Sit-In",
     "description": "Documents and articles relating to the January 1969 SASS occupation of the Admissions Office.",
     "url": "/exhibits/show/1969-sit-in",
-    "thumb": "fullsize%2sit-in-banner.png"
+    "thumb": "fullsize%2Fsit-in-banner.png"
   },
   {
     "title": "Black Community Struggles: Chester and Media",
