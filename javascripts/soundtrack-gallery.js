@@ -6,7 +6,7 @@ jQuery(function(){
     jQuery('#soundtrack .jcarousel').jcarousel('items')
         .each(function(){
             var currItem = jQuery(this).find('a');
-            currItem.find('img').attr('title','title');
+            currItem.find('img').attr('title','');
             var itemID = currItem.attr('href');
             itemID = itemID.substr(itemID.lastIndexOf('/') + 1);
             currItem.attr('data-item-id',itemID);
