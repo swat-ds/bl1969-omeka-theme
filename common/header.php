@@ -15,7 +15,7 @@
     ?>
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
 
-    <link rel="shortcut icon" href="/themes/berlin_bl1969mod/bl1969.ico?v=2" />
+    <link rel="shortcut icon" href="/themes/bl1969/bl1969.ico?v=2" />
     <?php echo auto_discovery_link_tags(); ?>
 
     <?php fire_plugin_hook('public_head',array('view'=>$this)); ?>
