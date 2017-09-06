@@ -109,7 +109,7 @@ div#collections-page {
 
     #students{
         @include background( linear-gradient(to bottom center, $gradient-top, $gradient-bottom),
-             image-url("9f8399fd81eaa2726d0e7614e838559d.jpg"));
+             image-url($s3-prefix+"9f8399fd81eaa2726d0e7614e838559d.jpg"));
     }
 
     #interviews{

@@ -31,7 +31,7 @@ a {
         width: 500px;
         height: 200px;
         vertical-align: bottom;
-        background: url(logo_small.jpg) no-repeat left center;
+        background: url('logo_small.jpg') no-repeat left center;
         background-size: auto 100%;
         @media screen and (max-width: 960px) {
             width: 400px;
@@ -46,7 +46,7 @@ a {
             line-height: 1.25 * $base-line-height;
             @include background( 
                 linear-gradient(to bottom center, rgba(50,50,50,.8), rgba(50,50,50,.2) ), 
-                image-url('/themes/berlin_bl1969mod/css/logo_small.jpg')
+                url('logo_small.jpg')
             );
             @include text-shadow(lighten($color-primary,25%) 1px 1px 0); 
             color: rgba(255,255,255, .9);
