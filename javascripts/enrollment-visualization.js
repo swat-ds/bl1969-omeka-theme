@@ -1,4 +1,5 @@
-var filepath = "themes/berlin_bl1969mod/javascripts/";
+// var filepath = "themes/berlin_bl1969mod/javascripts/";
+var filepath = "themes/bl1969/javascripts/";
 
 var margin = {
   top: 20,
