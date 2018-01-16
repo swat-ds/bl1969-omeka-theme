@@ -6,7 +6,7 @@ jQuery(function(){
     jQuery('#interviews-gallery .item')
         .each(function(){
             var $title = jQuery(this).find("h3 > a").text(); 
-            var $baseURL = '../files/square_thumbnails/';
+            var $baseURL = 'http://s3.amazonaws.com/sc-lib-ds-bl1969%2Fsquare_thumbnails%2F';
             jQuery(this).children('a')
                 .append(function(){
 
