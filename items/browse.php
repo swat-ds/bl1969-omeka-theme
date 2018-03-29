@@ -1,16 +1,21 @@
 <?php
 if(isset($_GET['search'])){
     $pageTitle = "Search:" . __($_GET['search']);
+    $pageTitle = filter_var($pageTitle, FILTER_SANITIZE_STRING);
+
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     echo "<h1>" . $pageTitle . "</h1>";
+
 }elseif(isset($_GET['collection'])){
     $current_collection = get_collection_for_item($items[0]);
     $pageTitle = __(metadata($current_collection, array('Dublin Core','Title')));
-    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 
+    echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     echo "<div class='collections-browse-metadata'>";
     echo "<h1>" . $pageTitle . "</h1>";
+
     $elements_array = array('Description', 'Source');
+
     foreach ($elements_array as $element) {
         $element_text = __(metadata($current_collection, array('Dublin Core', $element)));
         if($element_text){
@@ -20,10 +25,13 @@ if(isset($_GET['search'])){
         }   
     }
     echo "</div>";
+
 } elseif (isset($_GET['tags']) || isset($_GET['tag'])){
 
     $pageTitle = (isset($_GET['tags'])) ? __($_GET['tags'])
         : __($_GET['tag']);
+    $pageTitle = filter_var($pageTitle, FILTER_SANITIZE_STRING);
+
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     echo "<h1>tag: " . $pageTitle . "</h1>";    
 }
