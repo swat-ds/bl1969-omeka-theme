@@ -5,10 +5,10 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Special+Elite);
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(http://fonts.googleapis.com/css?family=Bevan);
+@import url(https://fonts.googleapis.com/css?family=Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Bevan);
 /* line 11, sass/_normalize.scss */
 article,
 aside,
