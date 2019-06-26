@@ -3,7 +3,7 @@
  
 jQuery(function(){
 
-   var s3Prefix = 'http://s3.amazonaws.com/sc-lib-ds-bl1969%2F';
+   var s3Prefix = 'https://s3.amazonaws.com/sc-lib-ds-bl1969%2F';
    var carousel = jQuery('.jcarousel#jcarousel-main ul');
 
     for(i in exhibitsJSON){

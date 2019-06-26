@@ -1,4 +1,10 @@
 .DS_Store
 .sass-cache/
 css/node_modules
+css/vendor
+css/.bundle
+css/.sass-cache
+css/Gemfile*
+css/package*
 timeline/
+

@@ -12,7 +12,7 @@
         <p><?php echo $copyright; ?></p>
         <?php endif; ?>
         <nav><?php echo public_nav_main()->setMaxDepth(0); ?></nav>
-        <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
+        <p><?php echo __('Proudly powered by <a href="https://omeka.org">Omeka</a>.'); ?></p>
 
     </div><!-- end footer-content -->
 
@@ -41,7 +41,7 @@
         break;
     case "enrollment":
         echo "<script type='text/javascript' 
-            src='http://d3js.org/d3.v3.min.js'></script>";
+            src='https://d3js.org/d3.v3.min.js'></script>";
         echo js_tag('enrollment-visualization');
         break;
     default:
@@ -59,7 +59,7 @@
   ga('create', 'UA-58250963-1', 'auto');
   ga('send', 'pageview');
 </script>
-<!-- <script src="http://54.210.13.122:35729/livereload.js"></script> -->
+
 </body>
 
 </html>
